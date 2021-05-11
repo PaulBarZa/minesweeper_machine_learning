@@ -1,0 +1,1325 @@
+# Linear Dense 512 x2 - decay eps : 0.99975 - max replay mem : 200 - batch size : 64  -  'win': 1, 'lose': -1, 'progress': 0.5, 'guess': -0.3, 'no_progress': -0.5   -  4x4x1
+ - Episode: 50, Win rate : 0.06, Median reward : -0.5, Epsilon : 0.785003468991349
+ - Episode: 100, Win rate : 0.0, Median reward : -0.5, Epsilon : 0.6488258341727037
+ - Episode: 150, Win rate : 0.1, Median reward : -1.9, Epsilon : 0.4451303758970475
+ - Episode: 200, Win rate : 0.04, Median reward : -1.5, Epsilon : 0.334983635583382
+ - Episode: 250, Win rate : 0.0, Median reward : -2.35, Epsilon : 0.22543506860470883
+ - Episode: 300, Win rate : 0.06, Median reward : -5.4, Epsilon : 0.11286536974363169
+
+
+ # Softmax Dense 512 x2 - decay eps : 0.99975 - max replay mem : 200 - batch size : 64  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   4x4x1
+ 
+ - Episode: 50, Win rate : 0.1, Median reward : -1.45, Epsilon : 0.7585690692097735
+ - Episode: 100, Win rate : 0.06, Median reward : -1.3, Epsilon : 0.5937172671395929
+ - Episode: 150, Win rate : 0.08, Median reward : -2.95, Epsilon : 0.3795921205332437
+ - Episode: 200, Win rate : 0.08, Median reward : -3.8, Epsilon : 0.2334660216835079
+ - Episode: 250, Win rate : 0.06, Median reward : -4.25, Epsilon : 0.1067178770270621
+
+
+  # Linear Dense 512 x2 - decay eps : 0.99975 - max replay mem : 200 - batch size : 64  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   4x4x1
+ 
+ - Episode: 50, Win rate : 0.06, Median reward : -0.55, Epsilon : 0.7808924876546589
+ - Episode: 100, Win rate : 0.06, Median reward : -1.45, Epsilon : 0.5712908282911607
+ - Episode: 150, Win rate : 0.04, Median reward : -1.6, Epsilon : 0.446244733503837
+ - Episode: 200, Win rate : 0.04, Median reward : -3.35, Epsilon : 0.3023450355360144
+ - Episode: 250, Win rate : 0.06, Median reward : -3.8, Epsilon : 0.17238815278711314
+ - Episode: 300, Win rate : 0.06, Median reward : -4.95, Epsilon : 0.06292053913845341
+
+# Linear Dense 512 x2 - decay eps : 0.99975 - max replay mem : 200 - batch size : 64  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   3x3x1
+
+ - Episode: 50, Win rate : 0.06, Median reward : -0.7, Epsilon : 0.9025332911943608
+ - Episode: 100, Win rate : 0.1, Median reward : -0.7, Epsilon : 0.8103304328585125
+ - Episode: 150, Win rate : 0.2, Median reward : -0.7, Epsilon : 0.7288215058402543
+ - Episode: 200, Win rate : 0.16, Median reward : -1.0, Epsilon : 0.6494750657258695
+ - Episode: 250, Win rate : 0.08, Median reward : -1.0, Epsilon : 0.5844383237811833
+ - Episode: 300, Win rate : 0.14, Median reward : -1.0, Epsilon : 0.5265720779008664
+ - Episode: 350, Win rate : 0.06, Median reward : -1.4, Epsilon : 0.4749100007129453
+ - Episode: 400, Win rate : 0.08, Median reward : -1.05, Epsilon : 0.43208118525993383
+ - Episode: 450, Win rate : 0.1, Median reward : -1.5, Epsilon : 0.3801620072610317
+ - Episode: 500, Win rate : 0.1, Median reward : -1.0, Epsilon : 0.348482014291854
+ - Episode: 550, Win rate : 0.16, Median reward : -1.3, Epsilon : 0.31421381079861976
+ - Episode: 600, Win rate : 0.14, Median reward : -1.5, Epsilon : 0.28218425399955027
+ - Episode: 650, Win rate : 0.08, Median reward : -2.1, Epsilon : 0.25373665988431476
+ - Episode: 700, Win rate : 0.18, Median reward : -1.5, Epsilon : 0.2302774370579109
+ - Episode: 750, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.20623597987096207
+ - Episode: 800, Win rate : 0.14, Median reward : -1.8, Epsilon : 0.18163608799696715
+ - Episode: 850, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.1630801337139956
+ - Episode: 900, Win rate : 0.12, Median reward : -1.65, Epsilon : 0.14726430208903063
+ - Episode: 950, Win rate : 0.1, Median reward : -1.5, Epsilon : 0.13341527070040338
+ - Episode: 1000, Win rate : 0.04, Median reward : -1.5, Epsilon : 0.12202249852089851
+ - Episode: 1050, Win rate : 0.14, Median reward : -2.1, Epsilon : 0.10824968647694748
+ - Episode: 1100, Win rate : 0.1, Median reward : -1.55, Epsilon : 0.09927856197860997
+ - Episode: 1150, Win rate : 0.12, Median reward : -1.8, Epsilon : 0.09043831337179632
+ - Episode: 1200, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.08146348910413621
+ - Episode: 1250, Win rate : 0.04, Median reward : -2.25, Epsilon : 0.07328762093728039
+ - Episode: 1300, Win rate : 0.08, Median reward : -2.1, Epsilon : 0.06682853628998903
+ - Episode: 1350, Win rate : 0.2, Median reward : -1.7, Epsilon : 0.059761772949509365
+ - Episode: 1400, Win rate : 0.12, Median reward : -1.5, Epsilon : 0.054426682392303874
+ - Episode: 1450, Win rate : 0.2, Median reward : -1.95, Epsilon : 0.04862269623747574
+ - Episode: 1500, Win rate : 0.12, Median reward : -1.95, Epsilon : 0.04281226015402954
+ - Episode: 1550, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.0388540526521524
+ - Episode: 1600, Win rate : 0.12, Median reward : -1.5, Epsilon : 0.03533240423153718
+ - Episode: 1650, Win rate : 0.08, Median reward : -2.1, Epsilon : 0.03187390444765121
+ - Episode: 1700, Win rate : 0.1, Median reward : -2.1, Epsilon : 0.028753938681341674
+ - Episode: 1750, Win rate : 0.1, Median reward : -1.95, Epsilon : 0.025945856115093997
+ - Episode: 1800, Win rate : 0.12, Median reward : -2.1, Epsilon : 0.023196418859357432
+ - Episode: 1850, Win rate : 0.04, Median reward : -1.5, Epsilon : 0.021321956731593796
+ - Episode: 1900, Win rate : 0.1, Median reward : -1.95, Epsilon : 0.01944278093609201
+ - Episode: 1950, Win rate : 0.06, Median reward : -1.8, Epsilon : 0.017671689602204124
+ - Episode: 2000, Win rate : 0.08, Median reward : -2.1, Epsilon : 0.01596184490207722
+ - Episode: 2050, Win rate : 0.14, Median reward : -1.5, Epsilon : 0.014562354065863847
+ - Episode: 2100, Win rate : 0.16, Median reward : -2.1, Epsilon : 0.013143494158644343
+ - Episode: 2150, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.011868812283895618
+ - Episode: 2200, Win rate : 0.06, Median reward : -1.5, Epsilon : 0.010989107079722676
+ - Episode: 2250, Win rate : 0.14, Median reward : -2.45, Epsilon : 0.01
+ - Episode: 2300, Win rate : 0.08, Median reward : -1.65, Epsilon : 0.01
+ - Episode: 2350, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 2400, Win rate : 0.1, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 2450, Win rate : 0.0, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 2500, Win rate : 0.1, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 2550, Win rate : 0.1, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 2600, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 2650, Win rate : 0.1, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 2700, Win rate : 0.14, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 2750, Win rate : 0.1, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 2800, Win rate : 0.16, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 2850, Win rate : 0.12, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 2900, Win rate : 0.16, Median reward : -2.4, Epsilon : 0.01
+ - Episode: 2950, Win rate : 0.12, Median reward : -1.65, Epsilon : 0.01
+ - Episode: 3000, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 3050, Win rate : 0.1, Median reward : -2.4, Epsilon : 0.01
+ - Episode: 3100, Win rate : 0.16, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 3150, Win rate : 0.16, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 3200, Win rate : 0.06, Median reward : -2.4, Epsilon : 0.01
+ - Episode: 3250, Win rate : 0.04, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 3300, Win rate : 0.06, Median reward : -2.4, Epsilon : 0.01
+ - Episode: 3350, Win rate : 0.1, Median reward : -1.35, Epsilon : 0.01
+ - Episode: 3400, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 3450, Win rate : 0.06, Median reward : -1.65, Epsilon : 0.01
+ - Episode: 3500, Win rate : 0.08, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 3550, Win rate : 0.12, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 3600, Win rate : 0.1, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 3650, Win rate : 0.06, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 3700, Win rate : 0.08, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 3750, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 3800, Win rate : 0.12, Median reward : -1.85, Epsilon : 0.01
+ - Episode: 3850, Win rate : 0.12, Median reward : -1.95, Epsilon : 0.01
+ - Episode: 3900, Win rate : 0.1, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 3950, Win rate : 0.06, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 4000, Win rate : 0.08, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 4050, Win rate : 0.08, Median reward : -1.65, Epsilon : 0.01
+ - Episode: 4100, Win rate : 0.06, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 4150, Win rate : 0.14, Median reward : -2.25, Epsilon : 0.01
+ - Episode: 4200, Win rate : 0.06, Median reward : -2.25, Epsilon : 0.01
+ - Episode: 4250, Win rate : 0.06, Median reward : -1.65, Epsilon : 0.01
+ - Episode: 4300, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 4350, Win rate : 0.1, Median reward : -2.1, Epsilon : 0.01
+
+
+ - Same as previous but change discount to 0.9
+
+ - Episode: 50, Win rate : 0.06, Median reward : -0.55, Epsilon : 0.916175053254989
+ - Episode: 100, Win rate : 0.18, Median reward : -0.7, Epsilon : 0.8119529184881181
+ - Episode: 150, Win rate : 0.1, Median reward : -0.7, Epsilon : 0.7277289566239417
+ - Episode: 200, Win rate : 0.2, Median reward : -1.0, Epsilon : 0.6351820582510952
+ - Episode: 250, Win rate : 0.04, Median reward : -1.0, Epsilon : 0.5588581370319646
+ - Episode: 300, Win rate : 0.12, Median reward : -1.15, Epsilon : 0.475385207680883
+ - Episode: 350, Win rate : 0.12, Median reward : -1.3, Epsilon : 0.39056752447682813
+ - Episode: 400, Win rate : 0.08, Median reward : -1.9, Epsilon : 0.311709816632871
+ - Episode: 450, Win rate : 0.08, Median reward : -2.5, Epsilon : 0.25386357580574415
+ - Episode: 500, Win rate : 0.16, Median reward : -3.1, Epsilon : 0.17812806020408328
+ - Episode: 550, Win rate : 0.06, Median reward : -3.35, Epsilon : 0.13438616802976305
+ - Episode: 600, Win rate : 0.06, Median reward : -1.3, Epsilon : 0.12251162726385569
+ - Episode: 650, Win rate : 0.06, Median reward : -1.8, Epsilon : 0.11046436743067248
+ - Episode: 700, Win rate : 0.04, Median reward : -1.8, Epsilon : 0.10025138436738398
+ - Episode: 750, Win rate : 0.16, Median reward : -2.1, Epsilon : 0.08980737716126072
+ - Episode: 800, Win rate : 0.12, Median reward : -2.1, Epsilon : 0.08029064556790584
+ - Episode: 850, Win rate : 0.08, Median reward : -1.65, Epsilon : 0.07297677071507486
+ - Episode: 900, Win rate : 0.14, Median reward : -1.8, Epsilon : 0.06571834335274691
+ - Episode: 950, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.05994134994721499
+ - Episode: 1000, Win rate : 0.12, Median reward : -1.5, Epsilon : 0.05420938338700586
+ - Episode: 1050, Win rate : 0.14, Median reward : -1.8, Epsilon : 0.04845279306587789
+ - Episode: 1100, Win rate : 0.04, Median reward : -1.05, Epsilon : 0.04515410392696795
+ - Episode: 1150, Win rate : 0.12, Median reward : -1.5, Epsilon : 0.040561435985578084
+ - Episode: 1200, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.0374893884119169
+ - Episode: 1250, Win rate : 0.06, Median reward : -1.35, Epsilon : 0.034528933829617865
+ - Episode: 1300, Win rate : 0.06, Median reward : -1.5, Epsilon : 0.031635714717477906
+ - Episode: 1350, Win rate : 0.12, Median reward : -1.8, Epsilon : 0.02876112896358257
+ - Episode: 1400, Win rate : 0.08, Median reward : -1.65, Epsilon : 0.026232872104360823
+ - Episode: 1450, Win rate : 0.14, Median reward : -1.95, Epsilon : 0.023523493791106524
+ - Episode: 1500, Win rate : 0.14, Median reward : -2.4, Epsilon : 0.021167912374567083
+ - Episode: 1550, Win rate : 0.14, Median reward : -2.1, Epsilon : 0.018938986197618413
+ - Episode: 1600, Win rate : 0.1, Median reward : -2.1, Epsilon : 0.016809726051630326
+ - Episode: 1650, Win rate : 0.12, Median reward : -1.8, Epsilon : 0.015267030244067219
+ - Episode: 1700, Win rate : 0.08, Median reward : -1.95, Epsilon : 0.013855516966654676
+ - Episode: 1750, Win rate : 0.08, Median reward : -2.25, Epsilon : 0.0123285645867589
+ - Episode: 1800, Win rate : 0.1, Median reward : -2.1, Epsilon : 0.011102338903463873
+ - Episode: 1850, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 1900, Win rate : 0.06, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 1950, Win rate : 0.06, Median reward : -1.8, Epsilon : 0.01
+ - Episode: 2000, Win rate : 0.12, Median reward : -2.1, Epsilon : 0.01
+
+  # Correction tableau de prediction
+
+  # Linear Dense 512 x2 - decay eps / lrn_rate : 0.99995 - max replay mem : 300 - batch size : 120  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   5x5x2
+
+ - Episode: 100, Win rate : 0.0, Median reward : -0.4, Epsilon : 0.8898121279837845
+ - Episode: 200, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.8191426786378002
+ - Episode: 300, Win rate : 0.0, Median reward : -0.55, Epsilon : 0.7297159795857167
+ - Episode: 400, Win rate : 0.0, Median reward : -0.4, Epsilon : 0.6733756730771122
+ - Episode: 500, Win rate : 0.0, Median reward : -0.7, Epsilon : 0.6129301791653609
+ - Episode: 600, Win rate : 0.0, Median reward : -1.0, Epsilon : 0.547054365865875
+ - Episode: 700, Win rate : 0.0, Median reward : -1.3, Epsilon : 0.4733781640690631
+ - Episode: 800, Win rate : 0.0, Median reward : -1.9, Epsilon : 0.40954260888994426
+ - Episode: 900, Win rate : 0.0, Median reward : -2.2, Epsilon : 0.3526539307874138
+
+   # Linear Dense 512 x2 - decay eps / lrn_rate : 0.99995 - max replay mem : 300 - batch size : 120  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   3x3x1
+   # Discount 0.1
+    
+ - Episode: 100, Win rate : 0.15, Median reward : -0.7, Epsilon : 0.9247850314508131
+ - Episode: 200, Win rate : 0.12, Median reward : -0.7, Epsilon : 0.881046231551978
+ - Episode: 300, Win rate : 0.05, Median reward : -0.7, Epsilon : 0.8481938028271605
+ - Episode: 400, Win rate : 0.11, Median reward : -0.7, Epsilon : 0.8135505862687968
+ - Episode: 500, Win rate : 0.1, Median reward : -0.7, Epsilon : 0.7802833043397593
+ - Episode: 600, Win rate : 0.1, Median reward : -1.0, Epsilon : 0.7473293505659507
+ - Episode: 700, Win rate : 0.05, Median reward : -1.0, Epsilon : 0.7185641640834404
+ - Episode: 800, Win rate : 0.12, Median reward : -1.0, Epsilon : 0.6878383898217901
+ - Episode: 900, Win rate : 0.07, Median reward : -1.0, Epsilon : 0.6595137760325436
+ - Episode: 1000, Win rate : 0.09, Median reward : -1.0, Epsilon : 0.6316287372682279
+ - Episode: 1100, Win rate : 0.06, Median reward : -0.95, Epsilon : 0.6067705886596716
+ - Episode: 1200, Win rate : 0.09, Median reward : -1.0, Epsilon : 0.5822499049024041
+ - Episode: 1300, Win rate : 0.09, Median reward : -1.0, Epsilon : 0.5571021641277382
+ - Episode: 1400, Win rate : 0.1, Median reward : -1.0, Epsilon : 0.5342680051511988
+ - Episode: 1500, Win rate : 0.06, Median reward : -1.2, Epsilon : 0.513909214353007
+ - Episode: 1600, Win rate : 0.07, Median reward : -1.25, Epsilon : 0.4935359053682945
+ - Episode: 1700, Win rate : 0.08, Median reward : -1.1, Epsilon : 0.47586999706481387
+ - Episode: 1800, Win rate : 0.07, Median reward : -1.2, Epsilon : 0.45837781390211013
+ - Episode: 1900, Win rate : 0.11, Median reward : -1.2, Epsilon : 0.44329830979273893
+ - Episode: 2000, Win rate : 0.08, Median reward : -1.1, Epsilon : 0.4258520243206603
+ - Episode: 2100, Win rate : 0.13, Median reward : -1.3, Epsilon : 0.4064418055200154
+ - Episode: 2200, Win rate : 0.07, Median reward : -1.3, Epsilon : 0.39236395968244264
+ - Episode: 2300, Win rate : 0.13, Median reward : -1.5, Epsilon : 0.37479856909329745
+ - Episode: 2400, Win rate : 0.1, Median reward : -1.25, Epsilon : 0.3595983440233948
+ - Episode: 2500, Win rate : 0.11, Median reward : -1.55, Epsilon : 0.3441875122103704
+ - Episode: 2600, Win rate : 0.08, Median reward : -1.2, Epsilon : 0.33166840053407726
+ - Episode: 2700, Win rate : 0.12, Median reward : -1.55, Epsilon : 0.3160449562012185
+ - Episode: 2800, Win rate : 0.14, Median reward : -1.5, Epsilon : 0.3027578757527054
+ - Episode: 2900, Win rate : 0.1, Median reward : -1.4, Epsilon : 0.2907554060985458
+ - Episode: 3000, Win rate : 0.06, Median reward : -1.5, Epsilon : 0.27913104442346093
+ - Episode: 3100, Win rate : 0.11, Median reward : -1.5, Epsilon : 0.2673557817451193
+ - Episode: 3200, Win rate : 0.12, Median reward : -1.2, Epsilon : 0.25709079450228534
+ - Episode: 3300, Win rate : 0.13, Median reward : -1.6, Epsilon : 0.2464547119395822
+ - Episode: 3400, Win rate : 0.09, Median reward : -1.5, Epsilon : 0.23744293500454489
+ - Episode: 3500, Win rate : 0.09, Median reward : -1.3, Epsilon : 0.2283606884632147
+ - Episode: 3600, Win rate : 0.12, Median reward : -1.5, Epsilon : 0.21876000735961645
+ - Episode: 3700, Win rate : 0.09, Median reward : -1.5, Epsilon : 0.20917561286314906
+ - Episode: 3800, Win rate : 0.13, Median reward : -1.6, Epsilon : 0.20025129684299692
+
+  # Linear Dense 512 x3 - decay eps / lrn_rate : 0.99995 - max replay mem : 300 - batch size : 120  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   3x3x1
+
+ - Episode: 100, Win rate : 0.11, Median reward : -0.7, Epsilon : 0.9250625155179368
+ - Episode: 200, Win rate : 0.11, Median reward : -0.7, Epsilon : 0.8887894066458413
+ - Episode: 300, Win rate : 0.07, Median reward : -0.7, Epsilon : 0.8575756749007015
+ - Episode: 400, Win rate : 0.1, Median reward : -0.7, Epsilon : 0.8241960556532226
+ - Episode: 500, Win rate : 0.1, Median reward : -0.7, Epsilon : 0.7936618504151253
+ - Episode: 600, Win rate : 0.11, Median reward : -0.7, Epsilon : 0.7635713130879233
+ - Episode: 700, Win rate : 0.1, Median reward : -1.0, Epsilon : 0.7315791764803661
+ - Episode: 800, Win rate : 0.06, Median reward : -0.7, Epsilon : 0.7066988271625418
+ - Episode: 900, Win rate : 0.11, Median reward : -0.95, Epsilon : 0.6787844198211609
+ - Episode: 1000, Win rate : 0.13, Median reward : -1.0, Epsilon : 0.6504422487840332
+ - Episode: 1100, Win rate : 0.11, Median reward : -1.0, Epsilon : 0.6259381437061995
+ - Episode: 1200, Win rate : 0.14, Median reward : -0.95, Epsilon : 0.6024475441752896
+ - Episode: 1300, Win rate : 0.11, Median reward : -1.0, Epsilon : 0.580302582623533
+ - Episode: 1400, Win rate : 0.13, Median reward : -1.0, Epsilon : 0.5574086622597854
+ - Episode: 1500, Win rate : 0.09, Median reward : -1.0, Epsilon : 0.536516705956843
+ - Episode: 1600, Win rate : 0.14, Median reward : -1.0, Epsilon : 0.5144233934686536
+ - Episode: 1700, Win rate : 0.04, Median reward : -1.0, Epsilon : 0.49682893866541644
+ - Episode: 1800, Win rate : 0.09, Median reward : -0.9, Epsilon : 0.47878174865457757
+ - Episode: 1900, Win rate : 0.08, Median reward : -1.0, Epsilon : 0.4601920323453677
+ - Episode: 2000, Win rate : 0.14, Median reward : -1.5, Epsilon : 0.43818563244124353
+ - Episode: 2100, Win rate : 0.09, Median reward : -1.2, Epsilon : 0.42214198146491244
+ - Episode: 2200, Win rate : 0.09, Median reward : -1.35, Epsilon : 0.4049204650118038
+ - Episode: 2300, Win rate : 0.07, Median reward : -1.0, Epsilon : 0.38884843972669153
+ - Episode: 2400, Win rate : 0.08, Median reward : -1.55, Epsilon : 0.3729292068136843
+ - Episode: 2500, Win rate : 0.09, Median reward : -1.5, Epsilon : 0.3581806968195369
+ - Episode: 2600, Win rate : 0.1, Median reward : -1.6, Epsilon : 0.3429849315966072
+ - Episode: 2700, Win rate : 0.11, Median reward : -1.3, Epsilon : 0.32871313899000637
+ - Episode: 2800, Win rate : 0.13, Median reward : -1.6, Epsilon : 0.3141543167879284
+ - Episode: 2900, Win rate : 0.09, Median reward : -1.7, Epsilon : 0.30099186863637634
+ - Episode: 3000, Win rate : 0.07, Median reward : -1.45, Epsilon : 0.28851070503537407
+ - Episode: 3100, Win rate : 0.15, Median reward : -1.3, Epsilon : 0.2766024114330493
+ - Episode: 3200, Win rate : 0.04, Median reward : -1.5, Epsilon : 0.2660223059668104
+ - Episode: 3300, Win rate : 0.11, Median reward : -1.3, Epsilon : 0.25518253746020053
+ - Episode: 3400, Win rate : 0.08, Median reward : -1.8, Epsilon : 0.24380725685501964
+ - Episode: 3500, Win rate : 0.11, Median reward : -2.1, Epsilon : 0.23195113765306438
+ - Episode: 3600, Win rate : 0.09, Median reward : -1.55, Epsilon : 0.22206622476377175
+ - Episode: 3700, Win rate : 0.06, Median reward : -1.5, Epsilon : 0.2139997233154724
+ - Episode: 3800, Win rate : 0.1, Median reward : -1.55, Epsilon : 0.2057318737117254
+ - Episode: 3900, Win rate : 0.1, Median reward : -1.5, Epsilon : 0.1971121127339372
+ - Episode: 4000, Win rate : 0.1, Median reward : -1.2, Epsilon : 0.1896483754398527
+ - Episode: 4100, Win rate : 0.1, Median reward : -1.5, Epsilon : 0.18219375331499152
+ - Episode: 4200, Win rate : 0.07, Median reward : -1.7, Epsilon : 0.1746911658266767
+ - Episode: 4300, Win rate : 0.15, Median reward : -1.85, Epsilon : 0.16672045382573517
+ - Episode: 4400, Win rate : 0.07, Median reward : -1.5, Epsilon : 0.16018309113793877
+ - Episode: 4500, Win rate : 0.1, Median reward : -1.6, Epsilon : 0.15374823940199828
+ - Episode: 4600, Win rate : 0.1, Median reward : -1.8, Epsilon : 0.14745387434108767
+ - Episode: 4700, Win rate : 0.1, Median reward : -1.5, Epsilon : 0.1418491886919781
+ - Episode: 4800, Win rate : 0.08, Median reward : -1.4, Epsilon : 0.13649165527338217
+ - Episode: 4900, Win rate : 0.09, Median reward : -1.8, Epsilon : 0.13045943678221758
+ - Episode: 5000, Win rate : 0.11, Median reward : -1.5, Epsilon : 0.12535645908246737
+ - Episode: 5100, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.12072441793982686
+ - Episode: 5200, Win rate : 0.17, Median reward : -1.8, Epsilon : 0.1157357245501768
+ - Episode: 5300, Win rate : 0.09, Median reward : -1.8, Epsilon : 0.11105863710699329
+ - Episode: 5400, Win rate : 0.11, Median reward : -1.8, Epsilon : 0.10646936263995589
+ - Episode: 5500, Win rate : 0.07, Median reward : -1.8, Epsilon : 0.10200340527084212
+ - Episode: 5600, Win rate : 0.09, Median reward : -1.6, Epsilon : 0.09811156261311639
+ - Episode: 5700, Win rate : 0.07, Median reward : -1.5, Epsilon : 0.09438236614780375
+ - Episode: 5800, Win rate : 0.07, Median reward : -1.8, Epsilon : 0.09107682354433043
+ - Episode: 5900, Win rate : 0.08, Median reward : -1.55, Epsilon : 0.08740061638586923
+
+   # Linear Dense 512 x3 - decay eps / lrn_rate : 0.99995 - max replay mem : 300 - batch size : 120  -  'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3   -   3x3x1
+   # Discount 0.9
+   # Fix guess move
+
+ - Episode: 100, Win rate : 0.11, Median reward : -0.7, Epsilon : 0.9253863521624586
+ - Episode: 200, Win rate : 0.11, Median reward : -0.4, Epsilon : 0.8808700355209207
+ - Episode: 300, Win rate : 0.14, Median reward : -0.7, Epsilon : 0.8374058426895002
+ - Episode: 400, Win rate : 0.09, Median reward : -0.7, Epsilon : 0.7994769265045887
+ - Episode: 500, Win rate : 0.11, Median reward : -0.7, Epsilon : 0.7635713130879233
+ - Episode: 600, Win rate : 0.09, Median reward : -0.7, Epsilon : 0.7301174438037173
+ - Episode: 700, Win rate : 0.14, Median reward : -0.7, Epsilon : 0.6932246429982816
+ - Episode: 800, Win rate : 0.1, Median reward : -1.0, Epsilon : 0.6561587345261136
+ - Episode: 900, Win rate : 0.09, Median reward : -1.0, Epsilon : 0.6225982333656566
+ - Episode: 1000, Win rate : 0.06, Median reward : -1.0, Epsilon : 0.5894559854287517
+ - Episode: 1100, Win rate : 0.14, Median reward : -1.0, Epsilon : 0.5570464553040808
+ - Episode: 1200, Win rate : 0.08, Median reward : -1.0, Epsilon : 0.5276046749584227
+ - Episode: 1300, Win rate : 0.15, Median reward : -1.0, Epsilon : 0.4923528099002394
+ - Episode: 1400, Win rate : 0.11, Median reward : -1.15, Epsilon : 0.4605603424834857
+ - Episode: 1500, Win rate : 0.15, Median reward : -1.0, Epsilon : 0.4318344399524043
+ - Episode: 1600, Win rate : 0.12, Median reward : -1.0, Epsilon : 0.4054066733918102
+ - Episode: 1700, Win rate : 0.12, Median reward : -1.8, Epsilon : 0.37656431275909014
+ - Episode: 1800, Win rate : 0.07, Median reward : -1.6, Epsilon : 0.34761197732594395
+ - Episode: 1900, Win rate : 0.07, Median reward : -1.3, Epsilon : 0.3248895115121073
+ - Episode: 2000, Win rate : 0.06, Median reward : -1.7, Epsilon : 0.3030456395950087
+ - Episode: 2100, Win rate : 0.08, Median reward : -1.55, Epsilon : 0.2828683789302641
+ - Episode: 2200, Win rate : 0.11, Median reward : -2.4, Epsilon : 0.25909103910215286
+ - Episode: 2300, Win rate : 0.07, Median reward : -1.3, Epsilon : 0.23870475497497004
+ - Episode: 2400, Win rate : 0.08, Median reward : -1.6, Epsilon : 0.22306779966812532
+
+ # Same as previous but change "progress" to a 0.9 reward
+ 
+ - Episode: 100, Win rate : 0.07, Median reward : 1.4, Epsilon : 0.9239068809045439
+ - Episode: 200, Win rate : 0.09, Median reward : 1.7, Epsilon : 0.8871466252150388
+ - Episode: 300, Win rate : 0.11, Median reward : 0.8, Epsilon : 0.854622062891781
+ - Episode: 400, Win rate : 0.12, Median reward : 1.1, Epsilon : 0.8203723454171986
+ - Episode: 500, Win rate : 0.07, Median reward : 1.7, Epsilon : 0.7827842728537895
+ - Episode: 600, Win rate : 0.16, Median reward : 1.7, Epsilon : 0.7430444306272653
+ - Episode: 700, Win rate : 0.08, Median reward : 1.7, Epsilon : 0.7065221701223385
+ - Episode: 800, Win rate : 0.06, Median reward : 1.25, Epsilon : 0.6730054090321879
+ - Episode: 900, Win rate : 0.04, Median reward : 1.35, Epsilon : 0.6381044824376887
+ - Episode: 1000, Win rate : 0.11, Median reward : 1.35, Epsilon : 0.5981552999867079
+ - Episode: 1100, Win rate : 0.08, Median reward : 0.5, Epsilon : 0.5679305402300328
+ - Episode: 1200, Win rate : 0.11, Median reward : 0.35, Epsilon : 0.5353644053982686
+ - Episode: 1300, Win rate : 0.09, Median reward : 0.65, Epsilon : 0.5021987952688151
+
+ # Same as previous but change 6x6x6 minesweeper
+ 
+ - Episode: 100, Win rate : 0.0, Median reward : 1.55, Epsilon : 0.9308158638986948
+ - Episode: 200, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.9036668236537938
+ - Episode: 300, Win rate : 0.0, Median reward : 1.4, Epsilon : 0.8769587750895408
+ - Episode: 400, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.8479817755802386
+ - Episode: 500, Win rate : 0.0, Median reward : 1.25, Epsilon : 0.8221791965562432
+ - Episode: 600, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.7965640820761559
+ - Episode: 700, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.7712455251829181
+ - Episode: 800, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.7427101274996804
+ - Episode: 900, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.7192471414767916
+ - Episode: 1000, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.6948556774003153
+ - Episode: 1100, Win rate : 0.0, Median reward : 1.25, Epsilon : 0.6695482545600752
+ - Episode: 1200, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.6463249239121497
+ - Episode: 1300, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.6219137347396124
+ - Episode: 1400, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.6032010933144851
+ - Episode: 1500, Win rate : 0.0, Median reward : 1.1, Epsilon : 0.574413434765029
+ - Episode: 1600, Win rate : 0.0, Median reward : 1.4, Epsilon : 0.5500440263265198
+ - Episode: 1700, Win rate : 0.0, Median reward : 1.4, Epsilon : 0.5243173471566307
+ - Episode: 1800, Win rate : 0.0, Median reward : 1.1, Epsilon : 0.49566273233330316
+ - Episode: 1900, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.4708052064287424
+ - Episode: 2000, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.44683666614521106
+ - Episode: 2100, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.42022555072433815
+ - Episode: 2200, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.40001032533961667
+ - Episode: 2300, Win rate : 0.0, Median reward : 0.35, Epsilon : 0.37064267332548634
+ - Episode: 2400, Win rate : 0.0, Median reward : 0.5, Epsilon : 0.34461802637887456
+ - Episode: 2500, Win rate : 0.0, Median reward : 0.35, Epsilon : 0.3243700909553238
+ - Episode: 2600, Win rate : 0.0, Median reward : -0.1, Epsilon : 0.30981767286792083
+ - Episode: 2700, Win rate : 0.0, Median reward : -0.4, Epsilon : 0.2808670764380689
+ - Episode: 2800, Win rate : 0.0, Median reward : -0.4, Epsilon : 0.26304625231330786
+ - Episode: 2900, Win rate : 0.0, Median reward : -0.4, Epsilon : 0.2401533324857071
+ - Episode: 3000, Win rate : 0.0, Median reward : -0.85, Epsilon : 0.2159128695541381
+ - Episode: 3100, Win rate : 0.0, Median reward : -1.0, Epsilon : 0.18870247663267506
+ - Episode: 3200, Win rate : 0.0, Median reward : -1.0, Epsilon : 0.1677154224967822
+ - Episode: 3300, Win rate : 0.0, Median reward : -1.6, Epsilon : 0.1478747278357424
+ - Episode: 3400, Win rate : 0.0, Median reward : -1.9, Epsilon : 0.12570167242613547
+ - Episode: 3500, Win rate : 0.0, Median reward : -2.8, Epsilon : 0.10407446996516835
+ - Episode: 3600, Win rate : 0.0, Median reward : -3.25, Epsilon : 0.08363827373082296
+ - Episode: 3700, Win rate : 0.0, Median reward : -5.65, Epsilon : 0.06237994962167298
+
+ # Same as previous but change 6x6x4 minesweeper & discount to 0.1
+
+ 
+ - Episode: 100, Win rate : 0.0, Median reward : 2.75, Epsilon : 0.8087111893622354
+ - Episode: 200, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.5962462519468019
+ - Episode: 300, Win rate : 0.0, Median reward : 1.1, Epsilon : 0.41711380258571296
+ - Episode: 400, Win rate : 0.0, Median reward : 0.2, Epsilon : 0.23230145982989947
+ - Episode: 500, Win rate : 0.0, Median reward : -2.2, Epsilon : 0.08367232500560677
+
+ # 5x5x2 with self.board fix in agent
+
+ - Episode: 100, Win rate : 0.01, Median reward : 3.8, Epsilon : 0.7452216089216186
+ - Episode: 200, Win rate : 0.02, Median reward : 3.5, Epsilon : 0.5494366802809925
+ - Episode: 300, Win rate : 0.04, Median reward : 4.9, Epsilon : 0.40508844889111245
+ - Episode: 400, Win rate : 0.06, Median reward : 6.2, Epsilon : 0.2808468903690905
+ - Episode: 500, Win rate : 0.08, Median reward : 7.0, Epsilon : 0.1983962318469769
+ - Episode: 600, Win rate : 0.07, Median reward : 5.3, Epsilon : 0.1410653939664294
+ - Episode: 700, Win rate : 0.08, Median reward : 6.2, Epsilon : 0.09263536670509814
+ - Episode: 800, Win rate : 0.17, Median reward : 6.55, Epsilon : 0.05887192566104403
+ - Episode: 900, Win rate : 0.2, Median reward : 5.9, Epsilon : 0.03436528989964025
+ - Episode: 1000, Win rate : 0.24, Median reward : 7.1, Epsilon : 0.016166687124781896
+ - Episode: 1100, Win rate : 0.21, Median reward : 10.7, Epsilon : 0.01
+ - Episode: 1200, Win rate : 0.32, Median reward : 11.45, Epsilon : 0.01
+ - Episode: 1300, Win rate : 0.32, Median reward : 8.9, Epsilon : 0.01
+ - Episode: 1400, Win rate : 0.27, Median reward : 7.1, Epsilon : 0.01
+ - Episode: 1500, Win rate : 0.32, Median reward : 11.3, Epsilon : 0.01
+ - Episode: 1600, Win rate : 0.24, Median reward : 8.75, Epsilon : 0.01
+ - Episode: 1700, Win rate : 0.26, Median reward : 8.45, Epsilon : 0.01
+ - Episode: 1800, Win rate : 0.3, Median reward : 12.5, Epsilon : 0.01
+ - Episode: 1900, Win rate : 0.38, Median reward : 10.35, Epsilon : 0.01
+ - Episode: 2000, Win rate : 0.28, Median reward : 9.8, Epsilon : 0.01
+ - Episode: 2100, Win rate : 0.35, Median reward : 11.6, Epsilon : 0.01
+ - Episode: 2200, Win rate : 0.29, Median reward : 10.05, Epsilon : 0.01
+ - Episode: 2300, Win rate : 0.29, Median reward : 10.7, Epsilon : 0.01
+ - Episode: 2400, Win rate : 0.29, Median reward : 10.25, Epsilon : 0.01
+ - Episode: 2500, Win rate : 0.34, Median reward : 7.4, Epsilon : 0.01
+ - Episode: 2600, Win rate : 0.33, Median reward : 8.9, Epsilon : 0.01
+ - Episode: 2700, Win rate : 0.29, Median reward : 10.4, Epsilon : 0.01
+ - Episode: 2800, Win rate : 0.26, Median reward : 7.55, Epsilon : 0.01
+ - Episode: 2900, Win rate : 0.28, Median reward : 9.8, Epsilon : 0.01
+ - Episode: 3000, Win rate : 0.32, Median reward : 8.6, Epsilon : 0.01
+ - Episode: 3100, Win rate : 0.31, Median reward : 10.55, Epsilon : 0.01
+
+ 5x5x2 replay size changed and epsilon changed to do more exploration
+ 
+ - Episode: 100, Win rate : 0.0, Median reward : 2.9, Epsilon : 0.9142097806840416
+ - Episode: 200, Win rate : 0.0, Median reward : 4.1, Epsilon : 0.8061370570734082
+ - Episode: 300, Win rate : 0.06, Median reward : 3.85, Epsilon : 0.7035556434499556
+ - Episode: 400, Win rate : 0.05, Median reward : 4.9, Epsilon : 0.6177849800286396
+ - Episode: 500, Win rate : 0.07, Median reward : 5.3, Epsilon : 0.5374488016365825
+ - Episode: 600, Win rate : 0.03, Median reward : 4.4, Epsilon : 0.47089111655795113
+ - Episode: 700, Win rate : 0.03, Median reward : 6.05, Epsilon : 0.4083071712213543
+ - Episode: 800, Win rate : 0.13, Median reward : 7.1, Epsilon : 0.349572855481129
+ - Episode: 900, Win rate : 0.11, Median reward : 5.3, Epsilon : 0.30432769526764536
+ - Episode: 1000, Win rate : 0.1, Median reward : 5.9, Epsilon : 0.26584097863940903
+ - Episode: 1100, Win rate : 0.13, Median reward : 6.2, Epsilon : 0.2295890507324393
+ - Episode: 1200, Win rate : 0.19, Median reward : 7.4, Epsilon : 0.19711421835949164
+ - Episode: 1300, Win rate : 0.2, Median reward : 7.6, Epsilon : 0.16548401495361045
+ - Episode: 1400, Win rate : 0.14, Median reward : 8.45, Epsilon : 0.14150948947293993
+ - Episode: 1500, Win rate : 0.26, Median reward : 9.65, Epsilon : 0.11654262344814631
+ - Episode: 1600, Win rate : 0.22, Median reward : 9.05, Epsilon : 0.09834174260523529
+ - Episode: 1700, Win rate : 0.23, Median reward : 7.9, Epsilon : 0.0828921227457078
+ - Episode: 1800, Win rate : 0.26, Median reward : 10.0, Epsilon : 0.06787243861853462
+ - Episode: 1900, Win rate : 0.29, Median reward : 12.35, Epsilon : 0.05533578633813196
+ - Episode: 2000, Win rate : 0.23, Median reward : 7.1, Epsilon : 0.04476422312471628
+ - Episode: 2100, Win rate : 0.29, Median reward : 12.95, Epsilon : 0.036550654526435376
+ - Episode: 2200, Win rate : 0.35, Median reward : 9.8, Epsilon : 0.029888955565070895
+ - Episode: 2300, Win rate : 0.41, Median reward : 13.4, Epsilon : 0.0240318041821981
+ - Episode: 2400, Win rate : 0.35, Median reward : 11.45, Epsilon : 0.01958899456317371
+ - Episode: 2500, Win rate : 0.4, Median reward : 12.95, Epsilon : 0.015125090324915678
+ - Episode: 2600, Win rate : 0.36, Median reward : 13.85, Epsilon : 0.012510214681984027
+ - Episode: 2700, Win rate : 0.33, Median reward : 9.35, Epsilon : 0.01038057378906181
+ - Episode: 2800, Win rate : 0.41, Median reward : 11.45, Epsilon : 0.01
+ - Episode: 2900, Win rate : 0.38, Median reward : 11.2, Epsilon : 0.01
+ - Episode: 3000, Win rate : 0.3, Median reward : 9.8, Epsilon : 0.01
+ - Episode: 3100, Win rate : 0.36, Median reward : 14.05, Epsilon : 0.01
+ - Episode: 3200, Win rate : 0.31, Median reward : 10.4, Epsilon : 0.01
+ - Episode: 3300, Win rate : 0.42, Median reward : 11.55, Epsilon : 0.01
+ - Episode: 3400, Win rate : 0.4, Median reward : 13.25, Epsilon : 0.01
+
+ 6x6x6 with max eploration
+ 
+ - Episode: 200, Win rate : 0.0, Median reward : 1.4, Epsilon : 0.9669552687751668
+ - Episode: 300, Win rate : 0.0, Median reward : 1.3, Epsilon : 0.9394095260682648
+ - Episode: 400, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.9083235728191795
+ - Episode: 500, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.8805087763298909
+ - Episode: 600, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.8514996233771719
+ - Episode: 700, Win rate : 0.0, Median reward : 1.55, Epsilon : 0.8251773003592826
+ - Episode: 800, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.8039584763381266
+ - Episode: 900, Win rate : 0.0, Median reward : 1.85, Epsilon : 0.7782103090175782
+ - Episode: 1000, Win rate : 0.0, Median reward : 2.3, Epsilon : 0.7526091014615501
+ - Episode: 1100, Win rate : 0.0, Median reward : 0.8, Epsilon : 0.7338798634345737
+ - Episode: 1200, Win rate : 0.0, Median reward : 1.3, Epsilon : 0.7114780497581082
+ - Episode: 1300, Win rate : 0.0, Median reward : 1.6, Epsilon : 0.689691081157044
+ - Episode: 1400, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.6711503011219468
+ - Episode: 1500, Win rate : 0.0, Median reward : 1.45, Epsilon : 0.6501429830179133
+ - Episode: 1600, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.6315275621082255
+ - Episode: 1700, Win rate : 0.0, Median reward : 1.85, Epsilon : 0.6111795432759705
+ - Episode: 1800, Win rate : 0.0, Median reward : 1.55, Epsilon : 0.5932939790630567
+ - Episode: 1900, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.5745799336948836
+ - Episode: 2000, Win rate : 0.0, Median reward : 1.6, Epsilon : 0.5589938862737565
+ - Episode: 2100, Win rate : 0.0, Median reward : 2.0, Epsilon : 0.5380425149794938
+ - Episode: 2200, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.5216969219065333
+ - Episode: 2300, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.5035766455575496
+ - Episode: 2400, Win rate : 0.0, Median reward : 2.0, Epsilon : 0.48567273926333016
+ - Episode: 2500, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.470682720400737
+ - Episode: 2600, Win rate : 0.0, Median reward : 2.0, Epsilon : 0.4534265543521506
+ - Episode: 2700, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.43724006616163175
+ - Episode: 2800, Win rate : 0.0, Median reward : 2.0, Epsilon : 0.42070481298847073
+ - Episode: 2900, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.4037033797165671
+ - Episode: 3000, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.3880287402318971
+ - Episode: 3100, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.3740645938617804
+ - Episode: 3200, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.3617768764269546
+ - Episode: 3300, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.35064589814670044
+ - Episode: 3400, Win rate : 0.0, Median reward : 1.55, Epsilon : 0.3396365514489704
+ - Episode: 3500, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.3267924028914786
+ - Episode: 3600, Win rate : 0.0, Median reward : 2.35, Epsilon : 0.315725843914666
+ - Episode: 3700, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.3047291557610478
+ - Episode: 3800, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.2941890206592934
+ - Episode: 3900, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.28368701749477754
+ - Episode: 4000, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.2726450011379992
+ - Episode: 4100, Win rate : 0.0, Median reward : 2.15, Epsilon : 0.2633067534860262
+ - Episode: 4200, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.25333652685449165
+ - Episode: 4300, Win rate : 0.0, Median reward : 2.75, Epsilon : 0.2425159931291762
+ - Episode: 4400, Win rate : 0.0, Median reward : 1.9, Epsilon : 0.2338235443036077
+ - Episode: 4500, Win rate : 0.0, Median reward : 2.75, Epsilon : 0.222675493473278
+ - Episode: 4600, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.213805026615765
+ - Episode: 4700, Win rate : 0.0, Median reward : 2.0, Epsilon : 0.2059356150457919
+ - Episode: 4800, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.19549059489640266
+ - Episode: 4900, Win rate : 0.0, Median reward : 3.35, Epsilon : 0.18766552369866013
+ - Episode: 5000, Win rate : 0.0, Median reward : 3.3, Epsilon : 0.17914760728816637
+ - Episode: 5100, Win rate : 0.0, Median reward : 2.3, Epsilon : 0.17160734904044223
+ - Episode: 5200, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.16367910434059696
+ - Episode: 5300, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.15524530947400314
+ - Episode: 5400, Win rate : 0.0, Median reward : 3.35, Epsilon : 0.14821372928795076
+ - Episode: 5500, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.14091460749296197
+ - Episode: 5600, Win rate : 0.0, Median reward : 4.85, Epsilon : 0.1326153149904634
+ - Episode: 5700, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.12553708305712363
+ - Episode: 5800, Win rate : 0.0, Median reward : 2.75, Epsilon : 0.11902694144182135
+ - Episode: 5900, Win rate : 0.0, Median reward : 3.8, Epsilon : 0.11248821421362122
+ - Episode: 6000, Win rate : 0.0, Median reward : 2.45, Epsilon : 0.10718402811487597
+ - Episode: 6100, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.10073524059587037
+ - Episode: 6200, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.09585574963749295
+ - Episode: 6300, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.0897737678071536
+ - Episode: 6400, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.0857590543779206
+ - Episode: 6500, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.08146230401641048
+ - Episode: 6600, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.0768333601884842
+ - Episode: 6700, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.07355164643219549
+ - Episode: 6800, Win rate : 0.0, Median reward : 4.4, Epsilon : 0.06984206915815235
+ - Episode: 6900, Win rate : 0.0, Median reward : 2.3, Epsilon : 0.06541717913726951
+ - Episode: 7000, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.061435222796728
+ - Episode: 7100, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.05846814607012173
+ - Episode: 7200, Win rate : 0.0, Median reward : 4.4, Epsilon : 0.05516510736801705
+ - Episode: 7300, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.05284851259283837
+ - Episode: 7400, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.05001026017793504
+ - Episode: 7500, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.04644302710634297
+ - Episode: 7600, Win rate : 0.0, Median reward : 3.4, Epsilon : 0.04381494115945028
+ - Episode: 7700, Win rate : 0.0, Median reward : 4.85, Epsilon : 0.04151162595634965
+ - Episode: 7800, Win rate : 0.0, Median reward : 4.25, Epsilon : 0.039254737358764516
+ - Episode: 7900, Win rate : 0.0, Median reward : 4.25, Epsilon : 0.036631935154870836
+ - Episode: 8000, Win rate : 0.01, Median reward : 2.6, Epsilon : 0.03409049504038256
+ - Episode: 8100, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.03170475893682266
+ - Episode: 8200, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.0296263775736104
+ - Episode: 8300, Win rate : 0.0, Median reward : 4.4, Epsilon : 0.0280128602311753
+ - Episode: 8400, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.026525653860106153
+ - Episode: 8500, Win rate : 0.0, Median reward : 4.45, Epsilon : 0.024826476384681356
+ - Episode: 8600, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.023340945532870947
+ - Episode: 8700, Win rate : 0.0, Median reward : 4.3, Epsilon : 0.02171943185946737
+ - Episode: 8800, Win rate : 0.0, Median reward : 3.95, Epsilon : 0.020549897507175167
+ - Episode: 8900, Win rate : 0.0, Median reward : 3.65, Epsilon : 0.0193048119929207
+ - Episode: 9000, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.01815875585867433
+ - Episode: 9100, Win rate : 0.0, Median reward : 4.85, Epsilon : 0.016908239999389982
+ - Episode: 9200, Win rate : 0.0, Median reward : 3.95, Epsilon : 0.01533286604377144
+ - Episode: 9300, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.014093962661172646
+ - Episode: 9400, Win rate : 0.0, Median reward : 1.7, Epsilon : 0.01328911202982291
+ - Episode: 9500, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.012177535132867004
+ - Episode: 9600, Win rate : 0.0, Median reward : 2.6, Epsilon : 0.01159404546364086
+ - Episode: 9700, Win rate : 0.0, Median reward : 5.15, Epsilon : 0.010886680509516689
+ - Episode: 9800, Win rate : 0.0, Median reward : 3.5, Epsilon : 0.01
+
+ 6x6x2 with lot of exploration discount to 0.1
+ 
+ - Episode: 100, Win rate : 0.0, Median reward : 5.3, Epsilon : 0.9472392693641996
+ - Episode: 200, Win rate : 0.0, Median reward : 5.5, Epsilon : 0.8574383072494147
+ - Episode: 300, Win rate : 0.03, Median reward : 7.4, Epsilon : 0.7766165721787529
+ - Episode: 400, Win rate : 0.01, Median reward : 5.75, Epsilon : 0.7137227953520943
+ - Episode: 500, Win rate : 0.04, Median reward : 6.65, Epsilon : 0.6463506551328444
+ - Episode: 600, Win rate : 0.03, Median reward : 7.75, Epsilon : 0.5848115537439141
+ - Episode: 700, Win rate : 0.04, Median reward : 7.7, Epsilon : 0.5326088700084842
+ - Episode: 800, Win rate : 0.07, Median reward : 6.95, Epsilon : 0.4878876406794359
+ - Episode: 900, Win rate : 0.09, Median reward : 8.35, Epsilon : 0.44344897626644636
+ - Episode: 1000, Win rate : 0.13, Median reward : 12.5, Epsilon : 0.39652137582606534
+ - Episode: 1100, Win rate : 0.13, Median reward : 11.45, Epsilon : 0.3565510026548931
+ - Episode: 1200, Win rate : 0.11, Median reward : 11.9, Epsilon : 0.3198251937431606
+ - Episode: 1300, Win rate : 0.17, Median reward : 13.25, Epsilon : 0.2858656000971549
+ - Episode: 1400, Win rate : 0.17, Median reward : 13.85, Epsilon : 0.25557578254670926
+ - Episode: 1500, Win rate : 0.25, Median reward : 16.6, Epsilon : 0.2233445397476083
+ - Episode: 1600, Win rate : 0.27, Median reward : 16.7, Epsilon : 0.19574490429284735
+ - Episode: 1700, Win rate : 0.23, Median reward : 17.1, Epsilon : 0.17401810777537907
+ - Episode: 1800, Win rate : 0.25, Median reward : 18.85, Epsilon : 0.1527810892493191
+ - Episode: 1900, Win rate : 0.31, Median reward : 18.95, Epsilon : 0.129878844105099
+
+ 6x6x2 with 5x5 working board size 3 hidden layers model (228, 220, 220)
+
+ - Episode: 100, Win rate : 0.01, Median reward : 6.2, Epsilon : 0.9289930293268998
+ - Episode: 200, Win rate : 0.0, Median reward : 7.45, Epsilon : 0.8338458340645041
+ - Episode: 300, Win rate : 0.0, Median reward : 5.3, Epsilon : 0.7698891465494875
+ - Episode: 400, Win rate : 0.01, Median reward : 8.05, Epsilon : 0.6940846642254113
+ - Episode: 500, Win rate : 0.01, Median reward : 6.05, Epsilon : 0.6277182598828029
+ - Episode: 600, Win rate : 0.01, Median reward : 7.55, Epsilon : 0.5669033822082067
+ - Episode: 700, Win rate : 0.01, Median reward : 8.65, Epsilon : 0.5108041672323625
+ - Episode: 800, Win rate : 0.01, Median reward : 7.85, Epsilon : 0.45896943034292276
+ - Episode: 900, Win rate : 0.0, Median reward : 7.6, Epsilon : 0.41093327091364706
+ - Episode: 1000, Win rate : 0.0, Median reward : 7.25, Epsilon : 0.3701573667853721
+ - Episode: 1100, Win rate : 0.01, Median reward : 8.0, Epsilon : 0.3184528637256508
+ - Episode: 1200, Win rate : 0.0, Median reward : 5.45, Epsilon : 0.2855370354037675
+
+  6x6x2 with 5x5 working board size 2 hidden layers model (512, 512)
+
+ - Episode: 100, Win rate : 0.01, Median reward : 7.85, Epsilon : 0.920025137336808
+ - Episode: 200, Win rate : 0.0, Median reward : 6.8, Epsilon : 0.8436593729153622
+ - Episode: 300, Win rate : 0.0, Median reward : 6.5, Epsilon : 0.7667389845390107
+ - Episode: 400, Win rate : 0.01, Median reward : 7.1, Epsilon : 0.6971454420411035
+ - Episode: 500, Win rate : 0.01, Median reward : 7.7, Epsilon : 0.6332350332617946
+ - Episode: 600, Win rate : 0.0, Median reward : 8.15, Epsilon : 0.5725723690250288
+ - Episode: 700, Win rate : 0.0, Median reward : 7.7, Epsilon : 0.52412852247369
+ - Episode: 800, Win rate : 0.01, Median reward : 7.1, Epsilon : 0.46791379947587564
+ - Episode: 900, Win rate : 0.02, Median reward : 7.25, Epsilon : 0.41574875966456715
+ - Episode: 1000, Win rate : 0.01, Median reward : 6.95, Epsilon : 0.3794712559705572
+ - Episode: 1100, Win rate : 0.0, Median reward : 8.0, Epsilon : 0.3444422460886444
+ - Episode: 1200, Win rate : 0.01, Median reward : 5.75, Epsilon : 0.3148902571798778
+ - Episode: 1300, Win rate : 0.01, Median reward : 7.1, Epsilon : 0.2809765852568075
+ - Episode: 1400, Win rate : 0.01, Median reward : 5.45, Epsilon : 0.2496770759678861
+ - Episode: 1500, Win rate : 0.01, Median reward : 6.95, Epsilon : 0.21828794239223176
+ - Episode: 1600, Win rate : 0.02, Median reward : 5.3, Epsilon : 0.19048274662162384
+ - Episode: 1700, Win rate : 0.05, Median reward : 8.0, Epsilon : 0.15919934138937228
+ - Episode: 1800, Win rate : 0.03, Median reward : 4.7, Epsilon : 0.13364710248866205
+ - Episode: 1900, Win rate : 0.02, Median reward : 6.2, Epsilon : 0.11315953105829318
+ - Episode: 2000, Win rate : 0.06, Median reward : 4.85, Epsilon : 0.09691116433124457
+ - Episode: 2100, Win rate : 0.06, Median reward : 5.15, Epsilon : 0.08060334265775214
+ - Episode: 2200, Win rate : 0.04, Median reward : 3.95, Epsilon : 0.06601850824489881
+ - Episode: 2300, Win rate : 0.04, Median reward : 2.6, Epsilon : 0.05408355391723532
+ - Episode: 2400, Win rate : 0.03, Median reward : 2.6, Epsilon : 0.04239472981930026
+ - Episode: 2500, Win rate : 0.04, Median reward : 1.8, Epsilon : 0.03246677918318335
+
+  6x6x2 with 3x3 working board size 3 hidden layers model (228, 220, 220)
+
+ - Episode: 100, Win rate : 0.01, Median reward : 5.3, Epsilon : 0.9376262979908033
+ - Episode: 200, Win rate : 0.01, Median reward : 6.1, Epsilon : 0.8526925875543211
+ - Episode: 300, Win rate : 0.02, Median reward : 6.65, Epsilon : 0.7811732082079598
+ - Episode: 400, Win rate : 0.02, Median reward : 6.7, Epsilon : 0.7178386259948418
+ - Episode: 500, Win rate : 0.02, Median reward : 6.5, Epsilon : 0.6523246688369885
+ - Episode: 600, Win rate : 0.05, Median reward : 6.35, Epsilon : 0.5985979959415935
+ - Episode: 700, Win rate : 0.04, Median reward : 9.2, Epsilon : 0.5448104269398697
+ - Episode: 800, Win rate : 0.04, Median reward : 8.6, Epsilon : 0.4930868869748413
+ - Episode: 900, Win rate : 0.05, Median reward : 9.5, Epsilon : 0.44587243169131735
+ - Episode: 1000, Win rate : 0.1, Median reward : 8.6, Epsilon : 0.4010275922007707
+ - Episode: 1100, Win rate : 0.04, Median reward : 9.2, Epsilon : 0.3652667462604975
+ - Episode: 1200, Win rate : 0.03, Median reward : 10.85, Epsilon : 0.3304566198364517
+ - Episode: 1300, Win rate : 0.09, Median reward : 10.7, Epsilon : 0.3010791138520855
+ - Episode: 1400, Win rate : 0.08, Median reward : 11.45, Epsilon : 0.26897548673957083
+ - Episode: 1500, Win rate : 0.08, Median reward : 11.6, Epsilon : 0.24199513084987884
+ - Episode: 1600, Win rate : 0.12, Median reward : 13.4, Epsilon : 0.21716662133578632
+ - Episode: 1700, Win rate : 0.16, Median reward : 12.2, Epsilon : 0.19282092849295404
+ - Episode: 1800, Win rate : 0.16, Median reward : 10.85, Epsilon : 0.17407902629619543
+ - Episode: 1900, Win rate : 0.18, Median reward : 15.5, Epsilon : 0.15452507661816917
+ - Episode: 2000, Win rate : 0.22, Median reward : 14.9, Epsilon : 0.13599297058415344
+ - Episode: 2100, Win rate : 0.22, Median reward : 16.25, Epsilon : 0.11934875648395671
+ - Episode: 2200, Win rate : 0.22, Median reward : 16.25, Epsilon : 0.10504583117482143
+ - Episode: 2300, Win rate : 0.2, Median reward : 13.55, Epsilon : 0.09381210648702773
+ - Episode: 2400, Win rate : 0.16, Median reward : 15.5, Epsilon : 0.0825447619961309
+ - Episode: 2500, Win rate : 0.22, Median reward : 16.7, Epsilon : 0.07305317948311174
+ - Episode: 2600, Win rate : 0.36, Median reward : 19.0, Epsilon : 0.06398408292564196
+ - Episode: 2700, Win rate : 0.28, Median reward : 17.3, Epsilon : 0.05668339548691144
+ - Episode: 2800, Win rate : 0.3, Median reward : 19.9, Epsilon : 0.04997526437086953
+ - Episode: 2900, Win rate : 0.27, Median reward : 16.95, Epsilon : 0.04411390556043276
+ - Episode: 3000, Win rate : 0.22, Median reward : 17.3, Epsilon : 0.03929401271241909
+ - Episode: 3100, Win rate : 0.25, Median reward : 14.75, Epsilon : 0.03472879157767255
+ - Episode: 3200, Win rate : 0.31, Median reward : 16.2, Epsilon : 0.030350582270755353
+ - Episode: 3300, Win rate : 0.3, Median reward : 15.95, Epsilon : 0.02675610177756007
+ - Episode: 3400, Win rate : 0.2, Median reward : 11.6, Epsilon : 0.02349198498616499
+ - Episode: 3500, Win rate : 0.17, Median reward : 9.35, Epsilon : 0.02073775974784401
+ - Episode: 3600, Win rate : 0.17, Median reward : 10.7, Epsilon : 0.018771761464525687
+ - Episode: 3700, Win rate : 0.2, Median reward : 15.0, Epsilon : 0.016703207586406255
+ - Episode: 3800, Win rate : 0.26, Median reward : 14.3, Epsilon : 0.014806966202982996
+ - Episode: 3900, Win rate : 0.26, Median reward : 11.6, Epsilon : 0.013125340428762743
+ - Episode: 4000, Win rate : 0.3, Median reward : 15.95, Epsilon : 0.011536795318340416
+ - Episode: 4100, Win rate : 0.27, Median reward : 12.8, Epsilon : 0.01
+ - Episode: 4200, Win rate : 0.24, Median reward : 12.05, Epsilon : 0.01
+ - Episode: 4300, Win rate : 0.22, Median reward : 12.5, Epsilon : 0.01
+ - Episode: 4400, Win rate : 0.21, Median reward : 14.75, Epsilon : 0.01
+ - Episode: 4500, Win rate : 0.3, Median reward : 15.95, Epsilon : 0.01
+ - Episode: 4600, Win rate : 0.22, Median reward : 14.75, Epsilon : 0.01
+ - Episode: 4700, Win rate : 0.17, Median reward : 11.9, Epsilon : 0.01
+ - Episode: 4800, Win rate : 0.17, Median reward : 13.55, Epsilon : 0.01
+ - Episode: 4900, Win rate : 0.28, Median reward : 16.1, Epsilon : 0.01
+ - Episode: 5000, Win rate : 0.16, Median reward : 11.6, Epsilon : 0.01
+ - Episode: 5100, Win rate : 0.23, Median reward : 16.25, Epsilon : 0.01
+ - Episode: 5200, Win rate : 0.23, Median reward : 15.65, Epsilon : 0.01
+ - Episode: 5300, Win rate : 0.29, Median reward : 18.35, Epsilon : 0.01
+ - Episode: 5400, Win rate : 0.23, Median reward : 15.05, Epsilon : 0.01
+ - Episode: 5500, Win rate : 0.16, Median reward : 14.3, Epsilon : 0.01
+ - Episode: 5600, Win rate : 0.19, Median reward : 14.3, Epsilon : 0.01
+ - Episode: 5700, Win rate : 0.29, Median reward : 12.5, Epsilon : 0.01
+ - Episode: 5800, Win rate : 0.2, Median reward : 11.9, Epsilon : 0.01
+ - Episode: 5900, Win rate : 0.2, Median reward : 15.95, Epsilon : 0.01
+ - Episode: 6000, Win rate : 0.2, Median reward : 15.2, Epsilon : 0.01
+ - Episode: 6100, Win rate : 0.26, Median reward : 13.7, Epsilon : 0.01
+ - Episode: 6200, Win rate : 0.27, Median reward : 14.3, Epsilon : 0.01
+ - Episode: 6300, Win rate : 0.26, Median reward : 16.25, Epsilon : 0.01
+ - Episode: 6400, Win rate : 0.22, Median reward : 14.3, Epsilon : 0.01
+ - Episode: 6500, Win rate : 0.24, Median reward : 14.75, Epsilon : 0.01
+ - Episode: 6600, Win rate : 0.21, Median reward : 14.3, Epsilon : 0.01
+ - Episode: 6700, Win rate : 0.13, Median reward : 12.05, Epsilon : 0.01
+ - Episode: 6800, Win rate : 0.18, Median reward : 15.35, Epsilon : 0.01
+ - Episode: 6900, Win rate : 0.2, Median reward : 11.9, Epsilon : 0.01
+ - Episode: 7000, Win rate : 0.22, Median reward : 14.4, Epsilon : 0.01
+ - Episode: 7100, Win rate : 0.13, Median reward : 11.45, Epsilon : 0.01
+
+  6x6x2 with 3x3 discount 0.9 2 Dense layers max exploration
+  
+ - Episode: 100, Win rate : 0.0, Median reward : 4.3, Epsilon : 0.9600182686842874
+ - Episode: 200, Win rate : 0.01, Median reward : 4.85, Epsilon : 0.9085061205282898
+ - Episode: 300, Win rate : 0.0, Median reward : 5.9, Epsilon : 0.8720319931058862
+ - Episode: 400, Win rate : 0.0, Median reward : 6.8, Epsilon : 0.8263558071780054
+ - Episode: 500, Win rate : 0.0, Median reward : 5.6, Epsilon : 0.7910015232514276
+ - Episode: 600, Win rate : 0.0, Median reward : 5.6, Epsilon : 0.7535717889729865
+ - Episode: 700, Win rate : 0.0, Median reward : 5.65, Epsilon : 0.7145290272705173
+ - Episode: 800, Win rate : 0.0, Median reward : 6.1, Epsilon : 0.6766627139511634
+ - Episode: 900, Win rate : 0.01, Median reward : 5.8, Epsilon : 0.6378781030717617
+ - Episode: 1000, Win rate : 0.0, Median reward : 5.9, Epsilon : 0.6012864634335086
+ - Episode: 1100, Win rate : 0.0, Median reward : 7.4, Epsilon : 0.5618279235597812
+ - Episode: 1200, Win rate : 0.01, Median reward : 8.5, Epsilon : 0.5297445356631648
+ - Episode: 1300, Win rate : 0.01, Median reward : 7.15, Epsilon : 0.4964556086343049
+ - Episode: 1400, Win rate : 0.0, Median reward : 7.25, Epsilon : 0.46372570220511694
+ - Episode: 1500, Win rate : 0.0, Median reward : 7.7, Epsilon : 0.42933704160643005
+ - Episode: 1600, Win rate : 0.0, Median reward : 6.35, Epsilon : 0.39698213348146205
+ - Episode: 1700, Win rate : 0.01, Median reward : 5.65, Epsilon : 0.3681867692596208
+ - Episode: 1800, Win rate : 0.01, Median reward : 9.2, Epsilon : 0.3391489216061983
+ - Episode: 1900, Win rate : 0.03, Median reward : 6.65, Epsilon : 0.31233092350861485
+ - Episode: 2000, Win rate : 0.0, Median reward : 5.6, Epsilon : 0.2901251425968682
+ - Episode: 2100, Win rate : 0.0, Median reward : 7.1, Epsilon : 0.26678319042186494
+ - Episode: 2200, Win rate : 0.0, Median reward : 6.8, Epsilon : 0.24487190482602475
+ - Episode: 2300, Win rate : 0.0, Median reward : 9.2, Epsilon : 0.2274053962752965
+ - Episode: 2400, Win rate : 0.0, Median reward : 8.45, Epsilon : 0.20686845914640314
+ - Episode: 2500, Win rate : 0.0, Median reward : 8.6, Epsilon : 0.19001101909095852
+ - Episode: 2600, Win rate : 0.0, Median reward : 7.4, Epsilon : 0.17424388972124916
+ - Episode: 2700, Win rate : 0.02, Median reward : 8.6, Epsilon : 0.15631991209681131
+ - Episode: 2800, Win rate : 0.0, Median reward : 8.0, Epsilon : 0.14343809536624424
+ - Episode: 2900, Win rate : 0.01, Median reward : 7.6, Epsilon : 0.13185495575854336
+ - Episode: 3000, Win rate : 0.03, Median reward : 8.0, Epsilon : 0.12040383238229857
+ - Episode: 3100, Win rate : 0.02, Median reward : 7.4, Epsilon : 0.11119666255752302
+ - Episode: 3200, Win rate : 0.02, Median reward : 5.05, Epsilon : 0.09735106835985413
+ - Episode: 3300, Win rate : 0.01, Median reward : 4.55, Epsilon : 0.08389129437305318
+ - Episode: 3400, Win rate : 0.02, Median reward : 3.8, Epsilon : 0.07194989160069172
+
+   6x6x2 with 3x3 discount 0.1 2 Dense layers max exploration
+
+ - Episode: 100, Win rate : 0.0, Median reward : 6.5, Epsilon : 0.9554689382547236
+ - Episode: 200, Win rate : 0.0, Median reward : 6.35, Epsilon : 0.9061243895796596
+ - Episode: 300, Win rate : 0.0, Median reward : 5.3, Epsilon : 0.8699850983791056
+ - Episode: 400, Win rate : 0.04, Median reward : 6.4, Epsilon : 0.826562424538622
+ - Episode: 500, Win rate : 0.01, Median reward : 5.9, Epsilon : 0.7907642554205455
+ - Episode: 600, Win rate : 0.03, Median reward : 6.95, Epsilon : 0.7532139228998003
+ - Episode: 700, Win rate : 0.0, Median reward : 6.55, Epsilon : 0.7221073083791089
+ - Episode: 800, Win rate : 0.02, Median reward : 7.85, Epsilon : 0.6828655963622815
+ - Episode: 900, Win rate : 0.05, Median reward : 8.0, Epsilon : 0.6450142071479131
+ - Episode: 1000, Win rate : 0.06, Median reward : 8.45, Epsilon : 0.614630786274069
+ - Episode: 1100, Win rate : 0.06, Median reward : 7.85, Epsilon : 0.5861326602036712
+ - Episode: 1200, Win rate : 0.1, Median reward : 7.7, Epsilon : 0.5570447123897505
+ - Episode: 1300, Win rate : 0.08, Median reward : 9.8, Epsilon : 0.528580364190674
+ - Episode: 1400, Win rate : 0.1, Median reward : 9.55, Epsilon : 0.5002806129208788
+ - Episode: 1500, Win rate : 0.09, Median reward : 11.4, Epsilon : 0.4715232571930358
+ - Episode: 1600, Win rate : 0.11, Median reward : 9.7, Epsilon : 0.4488854855132464
+ - Episode: 1700, Win rate : 0.19, Median reward : 11.2, Epsilon : 0.4226490049193811
+ - Episode: 1800, Win rate : 0.06, Median reward : 11.3, Epsilon : 0.4000807385195331
+ - Episode: 1900, Win rate : 0.14, Median reward : 10.4, Epsilon : 0.3789164353817417
+ - Episode: 2000, Win rate : 0.2, Median reward : 13.3, Epsilon : 0.35608337994751055
+ - Episode: 2100, Win rate : 0.11, Median reward : 11.2, Epsilon : 0.3386913737569463
+ - Episode: 2200, Win rate : 0.23, Median reward : 16.7, Epsilon : 0.31807541406205236
+ - Episode: 2300, Win rate : 0.21, Median reward : 18.2, Epsilon : 0.2976706509112031
+ - Episode: 2400, Win rate : 0.25, Median reward : 16.45, Epsilon : 0.279558589268102
+ - Episode: 2500, Win rate : 0.25, Median reward : 11.9, Epsilon : 0.26465741277435434
+ - Episode: 2600, Win rate : 0.25, Median reward : 18.1, Epsilon : 0.2488836304170898
+ - Episode: 2700, Win rate : 0.3, Median reward : 18.5, Epsilon : 0.2323998972667932
+ - Episode: 2800, Win rate : 0.29, Median reward : 18.7, Epsilon : 0.217801429093783
+ - Episode: 2900, Win rate : 0.31, Median reward : 16.5, Epsilon : 0.20358995133483723
+ - Episode: 3000, Win rate : 0.28, Median reward : 15.95, Epsilon : 0.19237223518962285
+ - Episode: 3100, Win rate : 0.33, Median reward : 16.6, Epsilon : 0.18108317645246083
+ - Episode: 3200, Win rate : 0.36, Median reward : 22.3, Epsilon : 0.17006499362390318
+ - Episode: 3300, Win rate : 0.32, Median reward : 20.4, Epsilon : 0.15881735386280002
+ - Episode: 3400, Win rate : 0.37, Median reward : 19.55, Epsilon : 0.14803577171398724
+ - Episode: 3500, Win rate : 0.38, Median reward : 22.15, Epsilon : 0.13700302106962287
+ - Episode: 3600, Win rate : 0.3, Median reward : 18.2, Epsilon : 0.12840022794789743
+ - Episode: 3700, Win rate : 0.37, Median reward : 23.75, Epsilon : 0.11929820077482171
+ - Episode: 3800, Win rate : 0.28, Median reward : 17.3, Epsilon : 0.11112162919898312
+ - Episode: 3900, Win rate : 0.32, Median reward : 19.9, Epsilon : 0.10362198176364422
+ - Episode: 4000, Win rate : 0.35, Median reward : 20.5, Epsilon : 0.09700123022723157
+ - Episode: 4100, Win rate : 0.34, Median reward : 20.75, Epsilon : 0.08960827496385106
+ - Episode: 4200, Win rate : 0.3, Median reward : 19.25, Epsilon : 0.08365045027045975
+ - Episode: 4300, Win rate : 0.32, Median reward : 20.35, Epsilon : 0.07862549697451889
+ - Episode: 4400, Win rate : 0.4, Median reward : 22.85, Epsilon : 0.07307199004307549
+ - Episode: 4500, Win rate : 0.34, Median reward : 15.8, Epsilon : 0.06866017533731086
+ - Episode: 4600, Win rate : 0.35, Median reward : 15.5, Epsilon : 0.06390792944479423
+ - Episode: 4700, Win rate : 0.39, Median reward : 17.75, Epsilon : 0.05982164902081258
+ - Episode: 4800, Win rate : 0.38, Median reward : 18.35, Epsilon : 0.05561715563492651
+ - Episode: 4900, Win rate : 0.41, Median reward : 22.95, Epsilon : 0.05159324584702373
+ - Episode: 5000, Win rate : 0.39, Median reward : 18.65, Epsilon : 0.047283655171508614
+
+ 10x10x8 with trained model 
+
+ - Episode: 100, Win rate : 0.0, Median reward : 7.4, Epsilon : 0.383355778879071
+ - Episode: 200, Win rate : 0.0, Median reward : 6.2, Epsilon : 0.35480258972042583
+ - Episode: 300, Win rate : 0.0, Median reward : 7.4, Epsilon : 0.3235841639688235
+ - Episode: 400, Win rate : 0.0, Median reward : 7.1, Epsilon : 0.2969331704341506
+ - Episode: 500, Win rate : 0.0, Median reward : 7.4, Epsilon : 0.27294081908858575
+ - Episode: 600, Win rate : 0.0, Median reward : 9.5, Epsilon : 0.24744851507183172
+ - Episode: 700, Win rate : 0.0, Median reward : 7.7, Epsilon : 0.22384414627307933
+ - Episode: 800, Win rate : 0.0, Median reward : 11.6, Epsilon : 0.19859092218428956
+ - Episode: 900, Win rate : 0.0, Median reward : 8.65, Epsilon : 0.1798898229824864
+ - Episode: 1000, Win rate : 0.0, Median reward : 14.0, Epsilon : 0.1588787708362714
+ - Episode: 1100, Win rate : 0.0, Median reward : 20.15, Epsilon : 0.1363926214099895
+ - Episode: 1200, Win rate : 0.0, Median reward : 15.8, Epsilon : 0.11552460034966905
+
+ 10x10x8 exlpoit test
+ 
+ - Episode: 100, Win rate : 0.0, Median reward : 23.75, Epsilon : 0.01
+
+ Exlporation with random rows cols and mines board on 25k games 
+
+
+------- Model vierge ----------
+
+ - Episode: 100, Win rate : 0.25, Median reward : -4.9, Epsilon : 0.01
+
+  ------- Model 3.0 ----------
+
+Progress 0.9 reward - 6x6x2 board
+
+ - Episode: 200, Win rate : 0.2, Median reward : -1.9, Epsilon : 0.8581560635083785
+ - Episode: 300, Win rate : 0.31, Median reward : -2.2, Epsilon : 0.690391469019611
+ - Episode: 400, Win rate : 0.34, Median reward : -1.75, Epsilon : 0.5507222113567436
+ - Episode: 500, Win rate : 0.39, Median reward : -1.55, Epsilon : 0.41756738350753286
+ - Episode: 600, Win rate : 0.45, Median reward : -2.35, Epsilon : 0.295421358659925
+ - Episode: 700, Win rate : 0.48, Median reward : -1.8, Epsilon : 0.20005732386581324
+ - Episode: 800, Win rate : 0.46, Median reward : -1.45, Epsilon : 0.13233046013387592
+ - Episode: 900, Win rate : 0.56, Median reward : -1.55, Epsilon : 0.06742177147320999
+ - Episode: 1000, Win rate : 0.66, Median reward : -1.25, Epsilon : 0.030170585747946118
+ - Episode: 1000: Save the model with name model_3.h5
+
+ 10x10x8 board
+ 
+ - Episode: 100, Win rate : 0.01, Median reward : -2.3, Epsilon : 0.9700050621557095
+ - Episode: 200, Win rate : 0.0, Median reward : -2.8, Epsilon : 0.7436110128468364
+ - Episode: 300, Win rate : 0.01, Median reward : -2.6, Epsilon : 0.55500742793232
+ - Episode: 400, Win rate : 0.0, Median reward : -3.7, Epsilon : 0.3726656763895653
+ - Episode: 500, Win rate : 0.01, Median reward : -3.5, Epsilon : 0.23820359780580858
+ - Episode: 600, Win rate : 0.0, Median reward : -3.65, Epsilon : 0.13602051473795246
+ - Episode: 700, Win rate : 0.0, Median reward : -5.75, Epsilon : 0.0610049789251088
+ - Episode: 800, Win rate : 0.0, Median reward : -5.75, Epsilon : 0.029359437976648865
+ - Episode: 900, Win rate : 0.01, Median reward : -6.6, Epsilon : 0.01
+ - Episode: 1000, Win rate : 0.0, Median reward : -6.2, Epsilon : 0.01
+ - Episode: 1000: Save the model with name model_3.h5
+ - Episode: 1100, Win rate : 0.01, Median reward : -4.65, Epsilon : 0.01
+ - Episode: 1200, Win rate : 0.0, Median reward : -3.75, Epsilon : 0.01
+ - Episode: 1300, Win rate : 0.0, Median reward : -2.35, Epsilon : 0.01
+
+------- Model 2.0 ----------
+
+Progress 0.3 reward - 6x6x2 board
+
+ - Episode: 200, Win rate : 0.27, Median reward : -1.9, Epsilon : 0.8160941211438125
+ - Episode: 300, Win rate : 0.25, Median reward : -1.9, Epsilon : 0.6725022796735806
+ - Episode: 400, Win rate : 0.27, Median reward : -2.4, Epsilon : 0.5021852096802825
+ - Episode: 500, Win rate : 0.42, Median reward : -1.9, Epsilon : 0.3695110499537016
+ - Episode: 600, Win rate : 0.51, Median reward : -2.65, Epsilon : 0.24005708035041975
+ - Episode: 700, Win rate : 0.51, Median reward : -1.6, Epsilon : 0.14270958898288907
+ - Episode: 800, Win rate : 0.58, Median reward : -1.75, Epsilon : 0.06597100091836992
+ - Episode: 900, Win rate : 0.52, Median reward : -1.6, Epsilon : 0.02532635591438303
+ - Episode: 1000, Win rate : 0.6, Median reward : -1.45, Epsilon : 0.01
+ Stop and relaunch
+ - Episode: 100, Win rate : 0.46, Median reward : -1.6, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.37, Median reward : -1.85, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.45, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 400, Win rate : 0.52, Median reward : -0.95, Epsilon : 0.01
+ - Episode: 500, Win rate : 0.53, Median reward : -1.3, Epsilon : 0.01
+ - Episode: 600, Win rate : 0.47, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 700, Win rate : 0.57, Median reward : -1.3, Epsilon : 0.01
+ - Episode: 800, Win rate : 0.58, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 900, Win rate : 0.63, Median reward : -0.95, Epsilon : 0.01
+ - Episode: 1000, Win rate : 0.7, Median reward : -0.55, Epsilon : 0.01
+  Stop and relaunch
+ - Episode: 100, Win rate : 0.53, Median reward : -2.05, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.39, Median reward : -1.6, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.49, Median reward : -2.0, Epsilon : 0.01
+ - Episode: 400, Win rate : 0.57, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 500, Win rate : 0.62, Median reward : -1.3, Epsilon : 0.01
+ - Episode: 600, Win rate : 0.58, Median reward : -1.55, Epsilon : 0.01
+ - Episode: 700, Win rate : 0.58, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 800, Win rate : 0.57, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 900, Win rate : 0.62, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 1000, Win rate : 0.62, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 1100, Win rate : 0.56, Median reward : -1.65, Epsilon : 0.01
+ - Episode: 1200, Win rate : 0.55, Median reward : -1.6, Epsilon : 0.01
+  Stop and relaunch
+ - Episode: 100, Win rate : 0.36, Median reward : -1.3, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.43, Median reward : -1.6, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.48, Median reward : -1.25, Epsilon : 0.01
+ - Episode: 400, Win rate : 0.47, Median reward : -1.4, Epsilon : 0.01
+ - Episode: 500, Win rate : 0.41, Median reward : -1.45, Epsilon : 0.01
+ - Episode: 600, Win rate : 0.44, Median reward : -1.25, Epsilon : 0.01
+ - Episode: 700, Win rate : 0.39, Median reward : -2.1, Epsilon : 0.01
+ - Episode: 800, Win rate : 0.48, Median reward : -1.0, Epsilon : 0.01
+ - Episode: 900, Win rate : 0.53, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 1000, Win rate : 0.52, Median reward : -0.9, Epsilon : 0.01
+ - Episode: 1000: Save the model with name model_2.h5
+ - Episode: 1100, Win rate : 0.57, Median reward : -1.0, Epsilon : 0.01
+  Stop and relaunch
+ - Episode: 100, Win rate : 0.5, Median reward : -1.4, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.46, Median reward : -1.9, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.49, Median reward : -0.9, Epsilon : 0.01
+ - Episode: 400, Win rate : 0.42, Median reward : -3.75, Epsilon : 0.01
+ - Episode: 500, Win rate : 0.47, Median reward : -1.45, Epsilon : 0.01
+ - Episode: 600, Win rate : 0.49, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 700, Win rate : 0.48, Median reward : -2.2, Epsilon : 0.01
+ - Episode: 800, Win rate : 0.46, Median reward : -1.25, Epsilon : 0.01
+ - Episode: 900, Win rate : 0.5, Median reward : -1.6, Epsilon : 0.01
+ - Episode: 1000, Win rate : 0.57, Median reward : -0.95, Epsilon : 0.01
+ 
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_2.h5, Memory size : 5845 - - -
+
+ - Episode: 100, Win rate : 0.25, Median reward : -2.2, Epsilon : 0.7749304032192219
+ - Episode: 200, Win rate : 0.31, Median reward : -2.0, Epsilon : 0.6092588116504054
+ - Episode: 300, Win rate : 0.37, Median reward : -1.8, Epsilon : 0.43744533191161744
+ - Episode: 400, Win rate : 0.49, Median reward : -1.3, Epsilon : 0.3321767910581087
+ - Episode: 500, Win rate : 0.48, Median reward : -1.4, Epsilon : 0.21868122409475868
+ - Episode: 600, Win rate : 0.6, Median reward : -1.3, Epsilon : 0.12118172496088395
+
+ - - - Starting parameters : - Size : 8x8x8 (Random : False), Model : model_2.h5, Memory size : 14209 - - -
+
+ - Episode: 100, Win rate : 0.0, Median reward : -2.2, Epsilon : 0.811414461880874
+ - Episode: 200, Win rate : 0.0, Median reward : -2.2, Epsilon : 0.6506692025323015
+ - Episode: 300, Win rate : 0.0, Median reward : -2.5, Epsilon : 0.5360498459083616
+ - - - - - Save the model, target model & replay memory for model : model_2.h5 - - - - -
+ - Episode: 400, Win rate : 0.0, Median reward : -2.8, Epsilon : 0.40239786098170466
+ - Episode: 500, Win rate : 0.0, Median reward : -2.5, Epsilon : 0.29996163353125893
+ - Episode: 600, Win rate : 0.0, Median reward : -3.85, Epsilon : 0.18629753330511442
+ - - - - - Save the model, target model & replay memory for model : model_2.h5 - - - - -
+ - Episode: 700, Win rate : 0.0, Median reward : -6.5, Epsilon : 0.07864839621338468
+
+------- Model 2.1 ----------
+ ---Progress to 0.9 & Average value instead of best value---
+
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_2_1.h5, Memory size : 0 - - -
+ - Episode: 200, Win rate : 0.3, Median reward : -1.85, Epsilon : 0.8536619896597835
+ - Episode: 300, Win rate : 0.31, Median reward : -2.3, Epsilon : 0.627188279046003
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 400, Win rate : 0.25, Median reward : -2.5, Epsilon : 0.4493064118221759
+ - Episode: 500, Win rate : 0.4, Median reward : -2.6, Epsilon : 0.3214728962054098
+ - Episode: 600, Win rate : 0.43, Median reward : -2.8, Epsilon : 0.19322389617492775
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 700, Win rate : 0.55, Median reward : -2.55, Epsilon : 0.11429513019168377
+ - Episode: 800, Win rate : 0.57, Median reward : -2.1, Epsilon : 0.053594116344910986
+ - Episode: 900, Win rate : 0.71, Median reward : -4.25, Epsilon : 0.016180221154351637
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ 
+ - - - Starting parameters : - Size : 6x6x3 (Random : False), Model : model_2_1.h5, Memory size : 17412 - - -
+
+ - Episode: 100, Win rate : 0.44, Median reward : -11.15, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.5, Median reward : -9.1, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.42, Median reward : -5.3, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+
+ - - - Starting parameters : - Size : 7x7x7 (Random : False), Model : model_2_1.h5, Memory size : 44623 - - -
+
+ - Episode: 100, Win rate : 0.0, Median reward : -19.3, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.0, Median reward : -6.2, Epsilon : 0.01
+
+ -- No progress -0.9
+ 
+ - - - Starting parameters : - Size : 7x7x5 (Random : False), Model : model_2_1.h5, Memory size : 44624 - - -
+ - Episode: 100, Win rate : 0.09, Median reward : -32.9, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.11, Median reward : -3.8, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.08, Median reward : -6.5, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 400, Win rate : 0.06, Median reward : -2.15, Epsilon : 0.01
+ - Episode: 500, Win rate : 0.05, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 600, Win rate : 0.11, Median reward : -1.8, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 700, Win rate : 0.06, Median reward : -2.2, Epsilon : 0.01
+ - Episode: 800, Win rate : 0.07, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 900, Win rate : 0.02, Median reward : -1.8, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1000, Win rate : 0.02, Median reward : -1.25, Epsilon : 0.01
+ - Episode: 1100, Win rate : 0.06, Median reward : -1.7, Epsilon : 0.01
+ - Episode: 1200, Win rate : 0.05, Median reward : -1.4, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1300, Win rate : 0.05, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 1400, Win rate : 0.06, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 1500, Win rate : 0.03, Median reward : -1.5, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1600, Win rate : 0.07, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 1700, Win rate : 0.04, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 1800, Win rate : 0.09, Median reward : -1.2, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1900, Win rate : 0.01, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 2000, Win rate : 0.05, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 2100, Win rate : 0.09, Median reward : -1.35, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 2200, Win rate : 0.04, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 2300, Win rate : 0.02, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 2400, Win rate : 0.01, Median reward : -1.2, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 2500, Win rate : 0.0, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 2600, Win rate : 0.02, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 2700, Win rate : 0.02, Median reward : -1.5, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 2800, Win rate : 0.04, Median reward : -1.5, Epsilon : 0.01
+ - Episode: 2900, Win rate : 0.03, Median reward : -1.2, Epsilon : 0.01
+ - Episode: 3000, Win rate : 0.05, Median reward : -1.2, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_2_1.h5, Memory size : 50000 - - -
+
+ - Episode: 100, Win rate : 0.42, Median reward : -0.9, Epsilon : 0.01
+ - Episode: 200, Win rate : 0.48, Median reward : -0.9, Epsilon : 0.01
+ - Episode: 300, Win rate : 0.48, Median reward : -0.9, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+
+ - - - Starting parameters : - Size : 7x7x4 (Random : False), Model : model_2_1.h5, Memory size : 0 - - -
+ 
+ - Episode: 199, Win rate : 0.03, Median reward : -4.85, Epsilon : 0.811414461880874
+ - Episode: 299, Win rate : 0.06, Median reward : -3.95, Epsilon : 0.6740173029506038
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 399, Win rate : 0.11, Median reward : -3.15, Epsilon : 0.5844890034577476
+ - Episode: 499, Win rate : 0.06, Median reward : -2.4, Epsilon : 0.5141278311266084
+ - Episode: 599, Win rate : 0.03, Median reward : -2.45, Epsilon : 0.4523498706667158
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 699, Win rate : 0.07, Median reward : -2.4, Epsilon : 0.39710059900843897
+ - Episode: 799, Win rate : 0.09, Median reward : -2.2, Epsilon : 0.3504345721436964
+ - Episode: 899, Win rate : 0.05, Median reward : -2.1, Epsilon : 0.30801789788480405
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 999, Win rate : 0.04, Median reward : -1.8, Epsilon : 0.27634340865046686
+ - Episode: 1099, Win rate : 0.03, Median reward : -1.8, Epsilon : 0.2465044492238187
+ - Episode: 1199, Win rate : 0.07, Median reward : -1.5, Epsilon : 0.22087928308003751
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1299, Win rate : 0.06, Median reward : -1.5, Epsilon : 0.1975718631183542
+ - Episode: 1399, Win rate : 0.1, Median reward : -1.4, Epsilon : 0.1785894783592322
+ - Episode: 1499, Win rate : 0.05, Median reward : -1.2, Epsilon : 0.16155202412677955
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1599, Win rate : 0.08, Median reward : -1.5, Epsilon : 0.14595736112871935
+ - Episode: 1699, Win rate : 0.09, Median reward : -1.4, Epsilon : 0.1310135862611101
+ - Episode: 1799, Win rate : 0.03, Median reward : -1.2, Epsilon : 0.11863346591495899
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 1899, Win rate : 0.12, Median reward : -1.2, Epsilon : 0.1061947609175513
+ - Episode: 1999, Win rate : 0.05, Median reward : -1.35, Epsilon : 0.09527440585206721
+ - Episode: 2099, Win rate : 0.02, Median reward : -1.2, Epsilon : 0.08637937729133764
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+ - Episode: 2199, Win rate : 0.07, Median reward : -1.2, Epsilon : 0.0781387759930426
+ - Episode: 2299, Win rate : 0.05, Median reward : -1.2, Epsilon : 0.07040212108795914
+ - Episode: 2399, Win rate : 0.06, Median reward : -1.2, Epsilon : 0.06351083458019031
+ - - - - - Save the model, target model & replay memory for model : model_2_1.h5 - - - - -
+
+------- Random Model ----------
+
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 0 - - -
+ - Episode: 200, Win rate : 0.08, Median reward : -2.65, Epsilon : 0.7911802494394007
+ - Episode: 300, Win rate : 0.06, Median reward : -2.5, Epsilon : 0.5921379269250083
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 400, Win rate : 0.03, Median reward : -4.0, Epsilon : 0.41987062012730486
+ - Episode: 500, Win rate : 0.1, Median reward : -4.1, Epsilon : 0.24325940552023512
+ - Episode: 600, Win rate : 0.2, Median reward : -6.85, Epsilon : 0.09732090988602744
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 10236 - - -
+ - Episode: 100, Win rate : 0.05, Median reward : -2.45, Epsilon : 0.7866434516767186
+ - Episode: 200, Win rate : 0.05, Median reward : -3.0, Epsilon : 0.5778050507887066
+ - Episode: 300, Win rate : 0.14, Median reward : -3.35, Epsilon : 0.3977962205042724
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 13842 - - -
+ - Episode: 100, Win rate : 0.08, Median reward : -3.8, Epsilon : 0.3714332635644331
+ - Episode: 200, Win rate : 0.14, Median reward : -4.9, Epsilon : 0.2117802069283013
+ - Episode: 300, Win rate : 0.15, Median reward : -9.35, Epsilon : 0.07858454488883175
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ 
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 21624 - - -
+ - Episode: 100, Win rate : 0.09, Median reward : -1.9, Epsilon : 0.9863881456550615
+ - Episode: 200, Win rate : 0.13, Median reward : -2.3, Epsilon : 0.9816059175387665
+ - Episode: 300, Win rate : 0.08, Median reward : -2.5, Epsilon : 0.9770813466947925
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 400, Win rate : 0.06, Median reward : -2.2, Epsilon : 0.9727040748341111
+ - Episode: 500, Win rate : 0.13, Median reward : -2.4, Epsilon : 0.9681963304783234
+ - Episode: 600, Win rate : 0.08, Median reward : -1.9, Epsilon : 0.9643216274779763
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 700, Win rate : 0.07, Median reward : -2.4, Epsilon : 0.959915122008085
+ - Episode: 800, Win rate : 0.06, Median reward : -2.5, Epsilon : 0.9555526408147722
+ - Episode: 900, Win rate : 0.13, Median reward : -2.45, Epsilon : 0.9508248225786492
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1000, Win rate : 0.06, Median reward : -2.2, Epsilon : 0.9462859822910697
+ - Episode: 1100, Win rate : 0.08, Median reward : -2.45, Epsilon : 0.9420513822628643
+ - Episode: 1200, Win rate : 0.06, Median reward : -2.0, Epsilon : 0.9382203243843305
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1300, Win rate : 0.08, Median reward : -1.9, Epsilon : 0.9342646957743547
+ - Episode: 1400, Win rate : 0.05, Median reward : -2.2, Epsilon : 0.9297072819766425
+ - Episode: 1500, Win rate : 0.07, Median reward : -2.7, Epsilon : 0.9254450663002951
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1600, Win rate : 0.04, Median reward : -2.8, Epsilon : 0.920672850185294
+ - Episode: 1700, Win rate : 0.08, Median reward : -2.5, Epsilon : 0.9160992855854807
+ - Episode: 1800, Win rate : 0.06, Median reward : -2.2, Epsilon : 0.911967850563083
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1900, Win rate : 0.08, Median reward : -2.7, Epsilon : 0.9068569535383514
+ - Episode: 2000, Win rate : 0.05, Median reward : -2.2, Epsilon : 0.9030922552016013
+ - Episode: 2100, Win rate : 0.04, Median reward : -2.2, Epsilon : 0.8995860415701901
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2200, Win rate : 0.06, Median reward : -2.5, Epsilon : 0.8954663931660931
+ - Episode: 2300, Win rate : 0.11, Median reward : -2.5, Epsilon : 0.8909556757514794
+ - Episode: 2400, Win rate : 0.03, Median reward : -2.45, Epsilon : 0.8868312072715222
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2500, Win rate : 0.04, Median reward : -2.4, Epsilon : 0.8833792925423803
+ - Episode: 2600, Win rate : 0.03, Median reward : -2.45, Epsilon : 0.8793470529794883
+ - Episode: 2700, Win rate : 0.08, Median reward : -2.8, Epsilon : 0.8751669208956184
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2800, Win rate : 0.07, Median reward : -2.5, Epsilon : 0.8708194130403225
+ - Episode: 2900, Win rate : 0.06, Median reward : -2.4, Epsilon : 0.8670525719945795
+ - Episode: 3000, Win rate : 0.11, Median reward : -2.75, Epsilon : 0.8625340259908874
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3100, Win rate : 0.04, Median reward : -2.2, Epsilon : 0.8585840570502279
+ - Episode: 3200, Win rate : 0.07, Median reward : -2.45, Epsilon : 0.8546735435914662
+ - Episode: 3300, Win rate : 0.07, Median reward : -2.9, Epsilon : 0.8500409816911132
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3400, Win rate : 0.1, Median reward : -2.8, Epsilon : 0.8460636137618875
+ - Episode: 3500, Win rate : 0.07, Median reward : -1.9, Epsilon : 0.8424459784518129
+ - Episode: 3600, Win rate : 0.11, Median reward : -2.2, Epsilon : 0.8382777816516053
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3700, Win rate : 0.03, Median reward : -2.5, Epsilon : 0.8335590230042246
+ - Episode: 3800, Win rate : 0.07, Median reward : -2.5, Epsilon : 0.8289621521773606
+ - Episode: 3900, Win rate : 0.1, Median reward : -2.65, Epsilon : 0.8248359242231112
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4000, Win rate : 0.08, Median reward : -2.2, Epsilon : 0.8210339620434606
+ - Episode: 4100, Win rate : 0.12, Median reward : -3.05, Epsilon : 0.8162041116619795
+ - Episode: 4200, Win rate : 0.12, Median reward : -2.5, Epsilon : 0.8123891294352272
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4300, Win rate : 0.09, Median reward : -2.4, Epsilon : 0.8088062844464089
+ - Episode: 4400, Win rate : 0.06, Median reward : -3.2, Epsilon : 0.8040724870103407
+ - Episode: 4500, Win rate : 0.08, Median reward : -3.3, Epsilon : 0.7989548269030049
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4600, Win rate : 0.1, Median reward : -2.7, Epsilon : 0.7949978376494831
+ - Episode: 4700, Win rate : 0.12, Median reward : -2.5, Epsilon : 0.7908231630719568
+ - Episode: 4800, Win rate : 0.09, Median reward : -2.95, Epsilon : 0.7864423085377851
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4900, Win rate : 0.09, Median reward : -2.15, Epsilon : 0.7826568546868302
+ - Episode: 5000, Win rate : 0.09, Median reward : -2.75, Epsilon : 0.7787143908143208
+ - Episode: 5100, Win rate : 0.05, Median reward : -2.9, Epsilon : 0.7742728483165482
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 5200, Win rate : 0.06, Median reward : -3.1, Epsilon : 0.7698758856879494
+ - Episode: 5300, Win rate : 0.07, Median reward : -2.5, Epsilon : 0.7663310855313391
+ - Episode: 5400, Win rate : 0.1, Median reward : -2.5, Epsilon : 0.7626043035841742
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 5500, Win rate : 0.07, Median reward : -2.9, Epsilon : 0.7582925617430819
+ - Episode: 5600, Win rate : 0.1, Median reward : -2.5, Epsilon : 0.7533796321282721
+ - Episode: 5700, Win rate : 0.07, Median reward : -2.9, Epsilon : 0.7493598036760378
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 5800, Win rate : 0.07, Median reward : -2.5, Epsilon : 0.7451900100904933
+ - Episode: 5900, Win rate : 0.08, Median reward : -3.3, Epsilon : 0.7404656292713014
+ - Episode: 6000, Win rate : 0.15, Median reward : -2.5, Epsilon : 0.7368351608119882
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+
+ - Episode: 100, Win rate : 0.11, Median reward : -2.8, Epsilon : 0.7261375944330524
+ - Episode: 200, Win rate : 0.09, Median reward : -2.7, Epsilon : 0.7225376348984359
+ - Episode: 300, Win rate : 0.11, Median reward : -3.2, Epsilon : 0.7181256064849506
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 400, Win rate : 0.08, Median reward : -3.05, Epsilon : 0.7137476566800757
+ - Episode: 500, Win rate : 0.17, Median reward : -2.35, Epsilon : 0.7104115614733567
+ - Episode: 600, Win rate : 0.14, Median reward : -2.5, Epsilon : 0.7066103996771275
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 700, Win rate : 0.08, Median reward : -3.1, Epsilon : 0.7026503774163374
+ - Episode: 800, Win rate : 0.1, Median reward : -3.2, Epsilon : 0.6986566532077418
+ - Episode: 900, Win rate : 0.06, Median reward : -3.1, Epsilon : 0.6941196889783542
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1000, Win rate : 0.07, Median reward : -2.5, Epsilon : 0.6899950290166114
+ - Episode: 1100, Win rate : 0.07, Median reward : -2.6, Epsilon : 0.686382038480527
+ - Episode: 1200, Win rate : 0.07, Median reward : -3.2, Epsilon : 0.6820475414459409
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1300, Win rate : 0.05, Median reward : -3.05, Epsilon : 0.6780658110270563
+ - Episode: 1400, Win rate : 0.1, Median reward : -3.05, Epsilon : 0.6743365616135284
+ - Episode: 1500, Win rate : 0.06, Median reward : -3.3, Epsilon : 0.6696527660590096
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1600, Win rate : 0.05, Median reward : -3.1, Epsilon : 0.6656335563187641
+ - Episode: 1700, Win rate : 0.1, Median reward : -3.1, Epsilon : 0.660689696929707
+ - Episode: 1800, Win rate : 0.09, Median reward : -2.9, Epsilon : 0.6564386692608879
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1900, Win rate : 0.09, Median reward : -3.1, Epsilon : 0.6517227559625449
+ - Episode: 2000, Win rate : 0.1, Median reward : -2.8, Epsilon : 0.648274512673866
+ - Episode: 2100, Win rate : 0.11, Median reward : -3.6, Epsilon : 0.6438650923642439
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2200, Win rate : 0.07, Median reward : -2.7, Epsilon : 0.6402759186118585
+ - Episode: 2300, Win rate : 0.12, Median reward : -2.7, Epsilon : 0.6368086339029342
+ - Episode: 2400, Win rate : 0.12, Median reward : -2.9, Epsilon : 0.6331606480540256
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2500, Win rate : 0.07, Median reward : -3.0, Epsilon : 0.6292062866791921
+ - Episode: 2600, Win rate : 0.05, Median reward : -3.25, Epsilon : 0.6249640610512867
+ - Episode: 2700, Win rate : 0.06, Median reward : -2.5, Epsilon : 0.6210888393368585
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2800, Win rate : 0.07, Median reward : -4.0, Epsilon : 0.6163864441378561
+ - Episode: 2900, Win rate : 0.15, Median reward : -2.5, Epsilon : 0.6130393323631447
+ - Episode: 3000, Win rate : 0.2, Median reward : -2.7, Epsilon : 0.6095732263797901
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3100, Win rate : 0.07, Median reward : -2.8, Epsilon : 0.6058146419822201
+ - Episode: 3200, Win rate : 0.15, Median reward : -3.2, Epsilon : 0.6020762223478632
+ - Episode: 3300, Win rate : 0.07, Median reward : -3.5, Epsilon : 0.5982382204020769
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3400, Win rate : 0.09, Median reward : -4.1, Epsilon : 0.5939523032186291
+ - Episode: 3500, Win rate : 0.11, Median reward : -2.8, Epsilon : 0.5899979143106289
+ - Episode: 3600, Win rate : 0.12, Median reward : -3.3, Epsilon : 0.5851036324334679
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3700, Win rate : 0.09, Median reward : -3.1, Epsilon : 0.5811326034693733
+ - Episode: 3800, Win rate : 0.13, Median reward : -2.7, Epsilon : 0.5775320556294762
+ - Episode: 3900, Win rate : 0.1, Median reward : -3.05, Epsilon : 0.5735779982608187
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4000, Win rate : 0.07, Median reward : -3.1, Epsilon : 0.5696025938381417
+ - Episode: 4100, Win rate : 0.18, Median reward : -2.4, Epsilon : 0.565898026945099
+ - Episode: 4200, Win rate : 0.09, Median reward : -3.4, Epsilon : 0.562068585435203
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4300, Win rate : 0.11, Median reward : -2.8, Epsilon : 0.5588571340071322
+ - Episode: 4400, Win rate : 0.13, Median reward : -3.2, Epsilon : 0.5548283841471466
+ - Episode: 4500, Win rate : 0.08, Median reward : -2.7, Epsilon : 0.5513274040151893
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4600, Win rate : 0.15, Median reward : -3.7, Epsilon : 0.5470437674553963
+ - Episode: 4700, Win rate : 0.12, Median reward : -2.8, Epsilon : 0.5436163706849865
+ - Episode: 4800, Win rate : 0.11, Median reward : -3.35, Epsilon : 0.5400457081308812
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4900, Win rate : 0.17, Median reward : -4.0, Epsilon : 0.5357720339468917
+ - Episode: 5000, Win rate : 0.09, Median reward : -3.15, Epsilon : 0.5320240756241342
+ - Episode: 5100, Win rate : 0.12, Median reward : -3.5, Epsilon : 0.5281174619744724
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 5200, Win rate : 0.1, Median reward : -3.6, Epsilon : 0.5242159439942221
+ - Episode: 5300, Win rate : 0.09, Median reward : -3.4, Epsilon : 0.5203380454296485
+ - Episode: 5400, Win rate : 0.09, Median reward : -3.5, Epsilon : 0.5163597273097349
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 5500, Win rate : 0.1, Median reward : -2.5, Epsilon : 0.5131194442168703
+ - Episode: 5600, Win rate : 0.13, Median reward : -3.1, Epsilon : 0.5094993796519407
+ - Episode: 5700, Win rate : 0.09, Median reward : -3.4, Epsilon : 0.5057328758486136
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 5800, Win rate : 0.09, Median reward : -3.4, Epsilon : 0.5012217380804792
+ - Episode: 5900, Win rate : 0.1, Median reward : -3.9, Epsilon : 0.4976856119920063
+ - Episode: 6000, Win rate : 0.1, Median reward : -3.4, Epsilon : 0.4941694915885639
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 6100, Win rate : 0.2, Median reward : -4.25, Epsilon : 0.48934537778183484
+ - Episode: 6200, Win rate : 0.14, Median reward : -3.8, Epsilon : 0.48533215568452587
+ - Episode: 6300, Win rate : 0.08, Median reward : -3.65, Epsilon : 0.48153961114846294
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 6400, Win rate : 0.18, Median reward : -3.1, Epsilon : 0.47769787594880553
+ - Episode: 6500, Win rate : 0.17, Median reward : -3.7, Epsilon : 0.47350072885195477
+ - Episode: 6600, Win rate : 0.15, Median reward : -4.15, Epsilon : 0.4693850482845447
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 6700, Win rate : 0.11, Median reward : -3.4, Epsilon : 0.4655518190243623
+ - Episode: 6800, Win rate : 0.08, Median reward : -3.6, Epsilon : 0.4618307073048436
+ - Episode: 6900, Win rate : 0.14, Median reward : -3.6, Epsilon : 0.45801565684708373
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 7000, Win rate : 0.12, Median reward : -3.75, Epsilon : 0.4543752274363819
+ - Episode: 7100, Win rate : 0.12, Median reward : -3.3, Epsilon : 0.4506713357949049
+ - Episode: 7200, Win rate : 0.17, Median reward : -4.2, Epsilon : 0.4467451538869479
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 7300, Win rate : 0.07, Median reward : -3.95, Epsilon : 0.44294618545925346
+ - Episode: 7400, Win rate : 0.1, Median reward : -2.8, Epsilon : 0.4398981698131653
+ - Episode: 7500, Win rate : 0.11, Median reward : -3.2, Epsilon : 0.4361465219762869
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 7600, Win rate : 0.1, Median reward : -3.1, Epsilon : 0.43313663355395976
+ - Episode: 7700, Win rate : 0.09, Median reward : -3.4, Epsilon : 0.42956506001874695
+ - Episode: 7800, Win rate : 0.18, Median reward : -4.1, Epsilon : 0.42577378593499277
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 7900, Win rate : 0.08, Median reward : -3.7, Epsilon : 0.42223759015306567
+ - Episode: 8000, Win rate : 0.13, Median reward : -4.15, Epsilon : 0.4181365864729305
+ - Episode: 8100, Win rate : 0.11, Median reward : -3.7, Epsilon : 0.4146306483626242
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 8200, Win rate : 0.1, Median reward : -4.25, Epsilon : 0.410732888292323
+ - Episode: 8300, Win rate : 0.15, Median reward : -2.4, Epsilon : 0.4079371340448888
+ - Episode: 8400, Win rate : 0.14, Median reward : -3.35, Epsilon : 0.4050672333736588
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 8500, Win rate : 0.15, Median reward : -3.25, Epsilon : 0.401556417326874
+ - Episode: 8600, Win rate : 0.16, Median reward : -3.25, Epsilon : 0.39823927541857757
+ - Episode: 8700, Win rate : 0.15, Median reward : -4.3, Epsilon : 0.39480935291251695
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 8800, Win rate : 0.13, Median reward : -2.65, Epsilon : 0.39202004739956636
+ - Episode: 8900, Win rate : 0.06, Median reward : -3.6, Epsilon : 0.3882455326627085
+ - Episode: 9000, Win rate : 0.13, Median reward : -3.35, Epsilon : 0.38495942317025916
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 9100, Win rate : 0.17, Median reward : -2.8, Epsilon : 0.3813081765635327
+ - Episode: 9200, Win rate : 0.09, Median reward : -3.8, Epsilon : 0.3778691183441418
+
+ - Episode: 100, Win rate : 0.12, Median reward : -3.9, Epsilon : 0.36647964530603705
+ - Episode: 200, Win rate : 0.17, Median reward : -4.3, Epsilon : 0.3634486279951445
+ - Episode: 300, Win rate : 0.08, Median reward : -4.3, Epsilon : 0.36025169462295614
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 400, Win rate : 0.13, Median reward : -3.55, Epsilon : 0.35696327879207806
+ - Episode: 500, Win rate : 0.14, Median reward : -4.35, Epsilon : 0.3534927201670022
+ - Episode: 600, Win rate : 0.14, Median reward : -3.3, Epsilon : 0.3507707486090586
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 700, Win rate : 0.11, Median reward : -4.25, Epsilon : 0.34698718384475974
+ - Episode: 800, Win rate : 0.09, Median reward : -3.7, Epsilon : 0.34385767023878555
+ - Episode: 900, Win rate : 0.08, Median reward : -4.3, Epsilon : 0.34024222690501615
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1000, Win rate : 0.14, Median reward : -4.6, Epsilon : 0.3369611938021206
+ - Episode: 1100, Win rate : 0.14, Median reward : -3.8, Epsilon : 0.3338736903300081
+ - Episode: 1200, Win rate : 0.11, Median reward : -4.7, Epsilon : 0.3306474574405338
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1300, Win rate : 0.18, Median reward : -2.4, Epsilon : 0.3276358249064952
+ - Episode: 1400, Win rate : 0.18, Median reward : -3.5, Epsilon : 0.32442282388622323
+ - Episode: 1500, Win rate : 0.14, Median reward : -3.2, Epsilon : 0.32131201259997305
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1600, Win rate : 0.15, Median reward : -5.5, Epsilon : 0.3175221638343107
+ - Episode: 1700, Win rate : 0.1, Median reward : -3.85, Epsilon : 0.31465053193606807
+ - Episode: 1800, Win rate : 0.11, Median reward : -5.8, Epsilon : 0.31065798135369055
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 1900, Win rate : 0.15, Median reward : -4.1, Epsilon : 0.3077083887648357
+ - Episode: 2000, Win rate : 0.16, Median reward : -4.15, Epsilon : 0.3042295503615768
+ - Episode: 2100, Win rate : 0.15, Median reward : -5.1, Epsilon : 0.301176807046321
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2200, Win rate : 0.16, Median reward : -4.3, Epsilon : 0.2978894557080277
+ - Episode: 2300, Win rate : 0.12, Median reward : -5.2, Epsilon : 0.2940919376677885
+ - Episode: 2400, Win rate : 0.15, Median reward : -4.6, Epsilon : 0.29080484414322133
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2500, Win rate : 0.14, Median reward : -5.0, Epsilon : 0.2872642066320089
+ - Episode: 2600, Win rate : 0.09, Median reward : -4.85, Epsilon : 0.2838418857826317
+ - Episode: 2700, Win rate : 0.11, Median reward : -5.9, Epsilon : 0.28030752711634477
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 2800, Win rate : 0.1, Median reward : -5.95, Epsilon : 0.2768296348643533
+ - Episode: 2900, Win rate : 0.1, Median reward : -6.05, Epsilon : 0.2734304380056671
+ - Episode: 3000, Win rate : 0.14, Median reward : -4.7, Epsilon : 0.27002167083614087
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3100, Win rate : 0.1, Median reward : -4.9, Epsilon : 0.26711577832144356
+ - Episode: 3200, Win rate : 0.22, Median reward : -5.2, Epsilon : 0.26368551414690655
+ - Episode: 3300, Win rate : 0.12, Median reward : -6.2, Epsilon : 0.2606235762140777
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3400, Win rate : 0.16, Median reward : -5.35, Epsilon : 0.25776597561089065
+ - Episode: 3500, Win rate : 0.16, Median reward : -5.15, Epsilon : 0.2546568803131301
+ - Episode: 3600, Win rate : 0.08, Median reward : -4.9, Epsilon : 0.251264718347488
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 3700, Win rate : 0.2, Median reward : -5.75, Epsilon : 0.24798964849264518
+ - Episode: 3800, Win rate : 0.14, Median reward : -5.5, Epsilon : 0.24474380569978427
+ - Episode: 3900, Win rate : 0.2, Median reward : -4.0, Epsilon : 0.24236308378225516
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4000, Win rate : 0.2, Median reward : -4.75, Epsilon : 0.23927700940395732
+ - Episode: 4100, Win rate : 0.13, Median reward : -5.5, Epsilon : 0.23601889884158272
+ - Episode: 4200, Win rate : 0.16, Median reward : -4.65, Epsilon : 0.233102168895383
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4300, Win rate : 0.11, Median reward : -5.2, Epsilon : 0.23008914436873473
+ - Episode: 4400, Win rate : 0.22, Median reward : -4.9, Epsilon : 0.2273877678467653
+ - Episode: 4500, Win rate : 0.26, Median reward : -2.85, Epsilon : 0.2248900825651163
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 4600, Win rate : 0.2, Median reward : -4.7, Epsilon : 0.2218556015876044
+ - Episode: 4700, Win rate : 0.14, Median reward : -6.35, Epsilon : 0.21864768509288637
+ - Episode: 4800, Win rate : 0.15, Median reward : -5.9, Epsilon : 0.21581070503664687
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 100, Win rate : 0.18, Median reward : -6.35, Epsilon : 0.13363652722115002
+ - Episode: 200, Win rate : 0.16, Median reward : -8.05, Epsilon : 0.06574084517667474
+ - Episode: 300, Win rate : 0.17, Median reward : -14.95, Epsilon : 0.01
+ - - - - - Save the model, target model & replay memory for model : model_random.h5 - - - - -
+ - Episode: 400, Win rate : 0.2, Median reward : -37.0, Epsilon : 0.01
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 50000 - - -
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 50000 - - -
+ - - - Starting parameters : - Size : 7x7x4 (Random : True), Model : model_random.h5, Memory size : 50000 - - -
