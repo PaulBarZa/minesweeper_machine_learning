@@ -94,6 +94,18 @@ class Constraint:
     def get_variables(self):
         return list(self.variables)
 
+    def get_possible_values(self):
+        return list(self.possible_values)
+
+    def get_unknown_variables(self):
+        unknown_variables = []
+
+        for variable in self.variables:
+            if variable.value == None:
+                unknown_variables.append(variable)
+
+        return unknown_variables
+
     def is_valid_domain(self, variable, value):
         if (variable, value) in self.valid_domain:
             for t in self.valid_domain[(variable, value)]:

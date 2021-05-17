@@ -13,7 +13,8 @@ def solve(env, csp_model, mines):
     board = env.get_player_board()
 
     while not done:
-
+        # print(board)
+        # print("---------")
         find_cell, done = get_cell(env, csp_model)
 
         if not find_cell:
@@ -33,7 +34,11 @@ def get_cell(env, csp_model):
     find_cell, done = False, False
     board = env.get_player_board()
 
+    csp_model.actualize_model()
+
     gac_propagotor(csp_model)
+
+    set_propagator(csp_model)
 
     for variable in csp_model.get_variables():
 
@@ -55,7 +60,6 @@ def get_cell(env, csp_model):
 
 def gac_propagotor(csp_model):
 
-    csp_model.actualize_model()
     constraints_copy = csp_model.get_constraints().copy()
 
     index = 0
@@ -97,6 +101,25 @@ def gac_propagotor(csp_model):
     return True
 
 
+def set_propagator(csp_model):
+
+    constraints_copy = csp_model.get_constraints().copy()
+
+    for constraint in constraints_copy:
+        if constraint.name == "":
+            # print("Constraint name's " " ")
+            # constraint.get_info()
+            unknown_variables = constraint.get_unknown_variables()
+            for unknown_var in unknown_variables:
+                verify_variables_domain(unknown_var)
+
+
+def verify_variables_domain(unknown_variable):
+    if unknown_variable.current_domain_size() == 1:
+        if unknown_variable.value == None:
+            unknown_variable.value = unknown_variable.get_current_domain()[0]
+
+
 EPISODE = 1000
 STATS_EVERY = EPISODE
 ROWS = 16
@@ -107,6 +130,7 @@ if __name__ == "__main__":
     wins_list = []
     index = 0
     for i in range(EPISODE):
+        print("Game : ", i)
         index += 1
 
         done = True

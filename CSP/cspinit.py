@@ -34,7 +34,7 @@ class CSP_Model():
         # Sort constraints from biggest to smallest list of variables
         constraints.sort(key=lambda x: len(x[1]))
 
-        # constraints = self.apply_set_propagators(constraints)
+        constraints = self.apply_set_propagators(constraints)
 
         for con in constraints:
             constraint = Constraint(con[0], con[1])
@@ -115,6 +115,49 @@ class CSP_Model():
                     # Reduce the sum
                     con2[2] = con2[2] - con1[2]
 
+        return constraints
+
+    def apply_set_propagators(self, constraints):
+        new_constraints = []
+        already_in_common = []
+        common_var_list = []
+
+        # Add new constraints if two constraints has at least two same variables in scope.
+        # Create a new variable for overlap variables.
+        # ex: c1=[v1,v2,v3], c2=[v2,v3,v4] => add c3=[v1,v2v3], c4=[v4, v2v3]. v2v3 is a new variable.
+        for i in range(len(constraints) - 1):
+            con1 = constraints[i]
+            for j in range(i + 1, len(constraints)):
+                con2 = constraints[j]
+                if set(con1[1]) == set(con2[1]):
+                    continue
+                if 1 < len(set(con1[1]) & set(con2[1])):
+                    # Recup the common variables
+                    common_vars = set(con1[1]) & set(con2[1])
+                    con1_uncommon_var = set(con1[1]) - common_vars
+                    con2_uncommon_var = set(con2[1]) - common_vars
+                    name = ""
+
+                    if not common_vars in already_in_common:
+                        for variable in common_vars:
+                            name += variable.name + ", "
+                        name = "(" + name + ")"
+                        var = Variable(name, list(range(len(common_vars) + 1)))
+                        self.add_variable(var)
+                        common_var_list.append(var)
+                        already_in_common.append(common_vars)
+                    else:
+                        index = already_in_common.index(common_vars)
+                        var = common_var_list[index]
+
+                    con1_uncommon_var.add(var)
+                    con2_uncommon_var.add(var)
+                    new_constraints.append(
+                        ["", list(con1_uncommon_var), con1[2]])
+                    new_constraints.append(
+                        ["", list(con2_uncommon_var), con2[2]])
+
+        constraints.extend(new_constraints)
         return constraints
 
     def add_constraint(self, constraint):
