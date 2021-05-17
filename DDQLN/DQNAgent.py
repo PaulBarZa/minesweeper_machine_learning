@@ -11,24 +11,24 @@ from main import*
 
 
 # Exploration settings
-epsilon = 0.21
+epsilon = 0.01
 # epsilon = 1
-EPSILON_DECAY = 0.99985
+EPSILON_DECAY = 0.9995
 # EPSILON_DECAY = 1
 EPSILON_MIN = 0.01
 
 # Deep Q-learning model parameters
-learn_rate = 0.01
+learn_rate = 0.0001
 # learn_rate = 0
-LEARN_DECAY = 0.99985
+LEARN_DECAY = 0.99995
 # LEARN_DECAY = 1
-LEARN_MIN = 0.001
-DISCOUNT = 0.1
+LEARN_MIN = 0.0001
+DISCOUNT = 0.0
 
 # Memory & Target
 SWAP_TARGET = 5
-BATCH_SIZE = 100
-REPLAY_MIN_SIZE = 1_000
+BATCH_SIZE = 32
+REPLAY_MIN_SIZE = 500
 REPLAY_MAX_SIZE = 50_000
 
 # Board size to train on
@@ -38,6 +38,8 @@ NB_ACTIONS = WORKING_SIZE * WORKING_SIZE
 
 class DQNAgent(object):
     def __init__(self, env):
+        # print("Num GPUs Available: ", len(
+        #     tf.config.list_physical_devices('GPU')))
         # Environment
         self.env = env
         self.action_list = self.init_action_list()
@@ -47,6 +49,8 @@ class DQNAgent(object):
         # Init model and target model
         self.model = self.load_model()
         self.target_model = self.load_target_model()
+        # Model weights are randomely defined, and we don't want that
+        # self.target_model.set_weights(self.model.get_weights())
         self.replay_memory = self.load_replay_memory()
         self.target_update_counter = 0
 
@@ -127,6 +131,8 @@ class DQNAgent(object):
                 # Check all predictions for this cell and select the predictions with coord value [i, j]
                 for prediction in parts_predictions:
                     if prediction['coords'] == [i, j]:
+                        if cells_predictions[i][j]["value"] == -100:
+                            cells_predictions[i][j] = prediction
                         if prediction['value'] > cells_predictions[i][j]["value"]:
                             # Select the best prediction for the [i, j] cell
                             cells_predictions[i][j] = prediction
@@ -228,18 +234,18 @@ class DQNAgent(object):
     # ----- Model & Training -----
     #
     def load_replay_memory(self):
-        if os.path.isfile(f'replays/{MODEL_NAME}.pkl'):
-            return pickle.load(open(f'replays/{MODEL_NAME}.pkl', "rb"))
+        if os.path.isfile(f'DDQLN/replays/{MODEL_NAME}.pkl'):
+            return pickle.load(open(f'DDQLN/replays/{MODEL_NAME}.pkl', "rb"))
         return deque(maxlen=REPLAY_MAX_SIZE)
 
     def load_model(self):
-        if os.path.isfile(f'models/{MODEL_NAME}'):
-            return keras.models.load_model(f'models/{MODEL_NAME}')
+        if os.path.isfile(f'DDQLN/models/{MODEL_NAME}'):
+            return keras.models.load_model(f'DDQLN/models/{MODEL_NAME}')
         return self.init_model()
 
     def load_target_model(self):
-        if os.path.isfile(f'targets/{MODEL_NAME}'):
-            return keras.models.load_model(f'targets/{MODEL_NAME}')
+        if os.path.isfile(f'DDQLN/targets/{MODEL_NAME}'):
+            return keras.models.load_model(f'DDQLN/targets/{MODEL_NAME}')
         return self.init_model()
 
     def init_model(self):
