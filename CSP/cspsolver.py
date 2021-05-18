@@ -1,9 +1,10 @@
 class Variable:
-    def __init__(self, name, domain):
+    def __init__(self, name, domain, nrows, ncols, n_mines):
         self.name = name
         self.domain = list(domain)
         self.current_domain = self.init_current_domain()
         self.value = None
+        self.mines_proba = n_mines / (nrows * ncols)
 
     def init_current_domain(self):
         current_domain = []

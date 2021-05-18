@@ -27,7 +27,7 @@ class CSP_Model():
                 ["end_game", unknown_cells, self.env.remaining_mines(self.board)])
 
         # Sort constraints from biggest to smallest list of variables
-        constraints.sort(key=lambda constrain: len(constrain[1]))
+        constraints.sort(key=lambda constraint: len(constraint[1]))
 
         constraints = self.apply_simple_propagators(constraints)
 
@@ -57,7 +57,8 @@ class CSP_Model():
                     possible_val = [1]
                 else:
                     possible_val = [0, 1]
-                var = Variable(name, possible_val)
+                var = Variable(name, possible_val, self.env.nrows,
+                               self.env.ncols, self.env.n_mines)
                 row_variables.append(var)
                 self.add_variable(var)
             variables.append(row_variables)
@@ -142,7 +143,8 @@ class CSP_Model():
                         for variable in common_vars:
                             name += variable.name + ", "
                         name = "(" + name + ")"
-                        var = Variable(name, list(range(len(common_vars) + 1)))
+                        var = Variable(name, list(
+                            range(len(common_vars) + 1)), self.env.nrows, self.env.ncols, self.env.n_mines)
                         self.add_variable(var)
                         common_var_list.append(var)
                         already_in_common.append(common_vars)

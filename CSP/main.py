@@ -13,18 +13,15 @@ def solve(env, csp_model, mines):
     board = env.get_player_board()
 
     while not done:
-        # print(board)
-        # print("---------")
+        print(board)
+        print("---------")
         find_cell, done = get_cell(env, csp_model)
 
         if not find_cell:
-            show_or_flag = True
-            while show_or_flag:
-                row = random.randint(0, env.nrows - 1)
-                col = random.randint(0, env.ncols - 1)
-                if board[row][col] == -1:
-                    show_or_flag = False
+
+            row, col = get_best_cell_proba(csp_model)
             _, _, done, _ = env.discover_cell(row, col, False)
+
         # print("Find cell ", find_cell)
     return env.remaining_mines(board) == mines
 
@@ -120,11 +117,64 @@ def verify_variables_domain(unknown_variable):
             unknown_variable.value = unknown_variable.get_current_domain()[0]
 
 
+def get_best_cell_proba(csp_model):
+
+    constraints_copy = csp_model.get_constraints().copy()
+    variables = actualize_variables_proba(constraints_copy)
+
+    best_variable = variables[0]
+
+    for variable in variables:
+        if variable.mines_proba < best_variable.mines_proba:
+            best_variable = variable
+
+    cell = best_variable.name.split()
+
+    return cell[0], cell[1]
+
+
+def actualize_variables_proba(constraints):
+    index = 0
+    while index < len(constraints):
+
+        constraint = constraints[index]
+
+        possible_values = list(constraint.possible_values)
+        if not len(possible_values) or constraint.name == "":
+            continue
+        mines_number = sum(possible_values[0])
+        variable_number = len(constraint.variables)
+        proba = round(mines_number / variable_number, 2)
+
+        variables = constraint.get_variables()
+
+        modify = False
+        for variable in variables:
+            if variable.mines_proba != proba:
+                variable.mines_proba = proba
+                modify = True
+
+        if modify:
+            constraints_ = list(
+                csp_model.constraints_with_variables[variable])
+            for constraint in constraints_:
+                if constraint not in constraints[index:]:
+                    constraints.append(constraint)
+
+        index += 1
+
+
+def get_starting_coord(choice, nrows, ncols):
+    starting_coords = [[0, 0], [0, ncols - 1],
+                       [nrows - 1, 0], [nrows - 1, ncols - 1]]
+    return starting_coords[choice][0], starting_coords[choice][1]
+
+
 EPISODE = 1000
 STATS_EVERY = EPISODE
-ROWS = 16
-COLS = 16
-MINES = 25
+ROWS = 10
+COLS = 10
+MINES = 10
 
 if __name__ == "__main__":
     wins_list = []
@@ -133,12 +183,23 @@ if __name__ == "__main__":
         print("Game : ", i)
         index += 1
 
+        env = Environment(ROWS, COLS, MINES)
+
         done = True
+        corner_mined = 0
         while done:
-            env = Environment(ROWS, COLS, MINES)
-            x = random.randint(0, env.nrows - 1)
-            y = random.randint(0, env.ncols - 1)
-            _, _, done, _ = env.discover_cell(x, y, False)
+            if corner_mined > 3:
+                row = random.randint(0, env.nrows - 1)
+                col = random.randint(0, env.ncols - 1)
+
+            else:
+                starting_choice = random.randint(0, 3)
+                row, col = get_starting_coord(
+                    starting_choice, env.nrows, env.ncols)
+
+                corner_mined += 1
+
+            _, _, done, _ = env.discover_cell(row, col, False)
 
         csp_model = CSP_Model(env)
 

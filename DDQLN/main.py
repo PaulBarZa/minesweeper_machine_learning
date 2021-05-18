@@ -17,11 +17,11 @@ MAX_SIZE = 20
 MIN_MINES_PERCENT = 1
 MAX_MINES_PERCENT = 15
 # Size
-ROWS = 9
-COLS = 8
-MINES = 4
+ROWS = 4
+COLS = 4
+MINES = 3
 
-MODEL_NAME = 'model_9x8x4.h5'
+MODEL_NAME = 'model_4x4x3.h5'
 
 
 def Get_board_part(board, working_size, row_index, col_index):
