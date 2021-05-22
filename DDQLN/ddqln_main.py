@@ -1,7 +1,10 @@
 import sys
 sys.path.insert(1, "environment")
+sys.path.insert(2, "CSP")
 
 from environment import Environment
+from cspinit import CSP_Model
+from csp_main import get_cell
 from DQNAgent import *
 from math import *
 import random
@@ -20,9 +23,9 @@ MAX_MINES_PERCENT = 15
 # Size
 ROWS = 6
 COLS = 6
-MINES = 6
+MINES = 2
 
-MODEL_NAME = 'model_6x6x6_ResNet.h5'
+MODEL_NAME = 'model_6x6x2_2.1.h5'
 
 
 def Write_in_file(filename, message):
@@ -51,6 +54,9 @@ if __name__ == "__main__":
             MINES = ceil(percent * (ROWS * COLS))
 
         env = Environment(ROWS, COLS, MINES)
+
+        csp_model = CSP_Model(env)
+
         agent.set_env(env)
 
         nb_move = 0
@@ -61,7 +67,7 @@ if __name__ == "__main__":
             nb_move += 1
 
             board = env.get_player_board()  # np array 2 dims
-            print(board)
+            # print(board)
             state = np.reshape(
                 board, (ROWS, COLS, 1))
             # Data normalisation
@@ -69,12 +75,19 @@ if __name__ == "__main__":
             state = state.astype(np.float16)
 
             move = agent.get_move(state)
-            print(move)
+            # print("agent move", move)
+            find_cell, cells = get_cell(env, csp_model)
+            # print("CSP coords", cells)
             coords = env.coords_array[move]
-            print(coords)
+            # print("agent coords", coords)
             new_board, reward, done, is_win = env.discover_cell(
                 coords[0], coords[1])
-            print(reward)
+            # print("Reward de base", reward)
+            # Shaping
+            if find_cell and nb_move > 1:
+                if coords in cells:
+                    reward = 0.9
+
             # input("Wait")
             new_state = np.reshape(
                 new_board, (ROWS, COLS, 1)).astype(np.float16)

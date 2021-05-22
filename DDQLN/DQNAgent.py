@@ -7,11 +7,11 @@ from tensorflow.keras.layers import Conv2D, Dense, Flatten, add
 from random import randint
 from random import sample
 from collections import deque
-from main import*
+from ddqln_main import*
 
 
 # Exploration settings
-epsilon = 0.99
+epsilon = 0.01
 # epsilon = 1
 EPSILON_DECAY = 0.99995
 # EPSILON_DECAY = 1

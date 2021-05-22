@@ -15,13 +15,18 @@ def solve(env, csp_model, mines):
     while not done:
         # print(board)
         # print("---------")
-        find_cell, done = get_cell(env, csp_model)
+        find_cell, cells = get_cell(env, csp_model)
 
         if not find_cell:
             row = random.randint(0, env.nrows - 1)
             col = random.randint(0, env.ncols - 1)
             # row, col = get_best_cell_proba(csp_model)
             _, _, done, _ = env.discover_cell(row, col)
+        else:
+            for cell in cells:
+                _, _, is_done, _ = env.discover_cell(cell[0], cell[1])
+                if is_done:
+                    done = is_done
 
         # print("Find cell ", find_cell)
     return env.remaining_mines(board) == mines
@@ -29,7 +34,8 @@ def solve(env, csp_model, mines):
 
 def get_cell(env, csp_model):
 
-    find_cell, done = False, False
+    find_cell = False
+    cells = []
     board = env.get_player_board()
 
     csp_model.actualize_model()
@@ -50,10 +56,10 @@ def get_cell(env, csp_model):
 
         if variable.value == 0:
             if board[row][col] == -1:
-                _, _, done, _ = env.discover_cell(row, col)
                 find_cell = True
+                cells.append([row, col])
 
-    return find_cell, done
+    return find_cell, cells
 
 
 def gac_propagotor(csp_model):
@@ -175,9 +181,9 @@ def get_starting_coord(choice, nrows, ncols):
 
 EPISODE = 200
 STATS_EVERY = EPISODE
-ROWS = 24
-COLS = 24
-MINES = 86
+ROWS = 12
+COLS = 12
+MINES = 50
 
 if __name__ == "__main__":
     wins_list = []

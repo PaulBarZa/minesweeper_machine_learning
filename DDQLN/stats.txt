@@ -2281,3 +2281,8 @@ Average value instead of best value
  - Episode: 20000, Win rate : 0.04, Median reward : -0.4, Epsilon : 0.01
  - - - - - Save the model, target model & replay memory for model : model_6x6x6_ResNet.h5 - - - - -
  - Episode: 20500, Win rate : 0.04, Median reward : -0.4, Epsilon : 0.01
+ - - - Starting parameters : - Size : 6x6x6 (Random : False), Model : model_6x6x6_ResNet.h5, Memory size : 50000 - - -
+ - - - Starting parameters : - Size : 6x6x6 (Random : False), Model : model_6x6x6_ResNet.h5, Memory size : 50000 - - -
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_6x6x2_2.1.h5, Memory size : 16778 - - -
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_6x6x2_2.1.h5, Memory size : 16778 - - -
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_6x6x2_2.1.h5, Memory size : 16778 - - -
