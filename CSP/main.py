@@ -13,14 +13,15 @@ def solve(env, csp_model, mines):
     board = env.get_player_board()
 
     while not done:
-        print(board)
-        print("---------")
+        # print(board)
+        # print("---------")
         find_cell, done = get_cell(env, csp_model)
 
         if not find_cell:
-
-            row, col = get_best_cell_proba(csp_model)
-            _, _, done, _ = env.discover_cell(row, col, False)
+            row = random.randint(0, env.nrows - 1)
+            col = random.randint(0, env.ncols - 1)
+            # row, col = get_best_cell_proba(csp_model)
+            _, _, done, _ = env.discover_cell(row, col)
 
         # print("Find cell ", find_cell)
     return env.remaining_mines(board) == mines
@@ -49,7 +50,7 @@ def get_cell(env, csp_model):
 
         if variable.value == 0:
             if board[row][col] == -1:
-                _, _, done, _ = env.discover_cell(row, col, False)
+                _, _, done, _ = env.discover_cell(row, col)
                 find_cell = True
 
     return find_cell, done
@@ -121,7 +122,7 @@ def get_best_cell_proba(csp_model):
 
     constraints_copy = csp_model.get_constraints().copy()
     variables = actualize_variables_proba(constraints_copy)
-
+    # print(variables)
     best_variable = variables[0]
 
     for variable in variables:
@@ -163,6 +164,8 @@ def actualize_variables_proba(constraints):
 
         index += 1
 
+    return variables
+
 
 def get_starting_coord(choice, nrows, ncols):
     starting_coords = [[0, 0], [0, ncols - 1],
@@ -170,11 +173,11 @@ def get_starting_coord(choice, nrows, ncols):
     return starting_coords[choice][0], starting_coords[choice][1]
 
 
-EPISODE = 1000
+EPISODE = 200
 STATS_EVERY = EPISODE
-ROWS = 10
-COLS = 10
-MINES = 10
+ROWS = 24
+COLS = 24
+MINES = 86
 
 if __name__ == "__main__":
     wins_list = []
@@ -199,7 +202,7 @@ if __name__ == "__main__":
 
                 corner_mined += 1
 
-            _, _, done, _ = env.discover_cell(row, col, False)
+            _, _, done, _ = env.discover_cell(row, col)
 
         csp_model = CSP_Model(env)
 

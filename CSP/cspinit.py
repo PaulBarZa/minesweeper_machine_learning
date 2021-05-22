@@ -82,15 +82,15 @@ class CSP_Model():
                     cells_around = self.env.get_cells_around(
                         row, col)
                     variables_around = []
-                    # Multiply by 8 because board unit is 0.125
-                    cell_sum = self.board[row][col] * 8
+
+                    cell_sum = self.board[row][col]
 
                     for cell in cells_around:
                         # If cell is flagged
-                        if cell['value'] == -16:
+                        if cell['value'] == -2:
                             cell_sum -= 1
                         # If cell is unknown
-                        if cell['value'] == -8:
+                        if cell['value'] == -1:
                             variables_around.append(
                                 variables[cell['x']][cell['y']])
                     name = str(row) + " " + str(col)

@@ -6,6 +6,7 @@ from DQNAgent import *
 from math import *
 import random
 import pickle
+import numpy as np
 
 STATS_EVERY = 500  # calculate stats every X games
 SAVE_MODEL_EVERY = 1000  # save model and replay every X episodes
@@ -17,24 +18,11 @@ MAX_SIZE = 20
 MIN_MINES_PERCENT = 1
 MAX_MINES_PERCENT = 15
 # Size
-ROWS = 4
-COLS = 4
-MINES = 3
+ROWS = 6
+COLS = 6
+MINES = 6
 
-MODEL_NAME = 'model_4x4x3.h5'
-
-
-def Get_board_part(board, working_size, row_index, col_index):
-    # #
-    # Get part of working_size x working_size from a given board
-    # #
-    board_part = []
-
-    for i in range(working_size):
-        board_part.append(board[row_index + i]
-                          [col_index:col_index + working_size])
-
-    return np.array(board_part)
+MODEL_NAME = 'model_6x6x6_ResNet.h5'
 
 
 def Write_in_file(filename, message):
@@ -52,7 +40,7 @@ if __name__ == "__main__":
     Write_in_file("DDQLN/stats.txt",
                   f"\n - - - Starting parameters : - Size : {ROWS}x{COLS}x{MINES} (Random : {RANDOM}), Model : {MODEL_NAME}, Memory size : {len(agent.replay_memory)} - - -")
     index = 0
-    for i in range(SAVE_MODEL_EVERY * 2_000):
+    for i in range(SAVE_MODEL_EVERY * 25):
         index += 1
         # Play on random boards
         if RANDOM:
@@ -65,31 +53,47 @@ if __name__ == "__main__":
         env = Environment(ROWS, COLS, MINES)
         agent.set_env(env)
 
+        nb_move = 0
         episode_reward = 0
 
         done = False
         while not done:
+            nb_move += 1
 
-            prediction, guess_move = agent.get_prediction()
-            print("Prediction")
-            print(prediction)
-            print(env.get_player_board())
-            coords = prediction["coords"]
-            futur_board, reward, done, is_win = env.discover_cell(
-                coords[0], coords[1], guess_move)
-            print("Reward")
+            board = env.get_player_board()  # np array 2 dims
+            print(board)
+            state = np.reshape(
+                board, (ROWS, COLS, 1))
+            # Data normalisation
+            state = state.astype(np.int8) / 8
+            state = state.astype(np.float16)
+
+            move = agent.get_move(state)
+            print(move)
+            coords = env.coords_array[move]
+            print(coords)
+            new_board, reward, done, is_win = env.discover_cell(
+                coords[0], coords[1])
             print(reward)
-            part_coords = prediction["part_coords"]
-            futur_state = Get_board_part(
-                futur_board, WORKING_SIZE, part_coords[0], part_coords[1]).reshape(-1, NB_ACTIONS)
+            # input("Wait")
+            new_state = np.reshape(
+                new_board, (ROWS, COLS, 1)).astype(np.float16)
+            # Data normalisation
+            new_state = new_state.astype(np.int8) / 8
+            new_state = new_state.astype(np.float16)
 
             episode_reward += reward
 
             # Add the [state(t), move, reward, state(t+1), done] to the replay memory
             agent.update_replay_memory(
-                (prediction["state"][0], prediction["move"], reward, futur_state[0], done))
+                (state, move, reward, new_state, done))
             # Train agent in each move
             agent.train(done)
+
+        # If loose first moove
+        if nb_move == 1:
+            index -= 1
+            continue
 
         episode_rewards.append(episode_reward)
         wins_list.append(is_win)

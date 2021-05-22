@@ -5,13 +5,23 @@ import numpy as np
 
 class Environment():
     def __init__(self, width, height, n_mines,
-                 rewards={'win': 1, 'lose': -1, 'progress': 0.9, 'guess': -0.3, 'no_progress': -0.9}):
+                 rewards={'win': 1, 'lose': -1, 'progress': 0.3, 'guess': -0.3, 'no_progress': -0.3}):
         self.nrows, self.ncols = width, height
         self.ntiles = self.nrows * self.ncols
         self.n_mines = n_mines
         self.board = self.create_minesweeper()
         self.playing_board = self.generate_player_minesweeper()
         self.rewards = rewards
+        self.coords_array = self.init_coords()
+
+    def init_coords(self):
+        coords_array = []
+
+        for i in range(self.nrows):
+            for j in range(self.ncols):
+                coords_array.append([i, j])
+
+        return coords_array
 
     def create_minesweeper(self):
         # Generate an array of n x h (n columns x h lines)
@@ -32,35 +42,35 @@ class Environment():
 
                     if (y >= 0 and y <= self.ncols - 2) and (x >= 0 and x <= self.nrows - 1):
                         if array[x][y + 1] != -2:
-                            array[x][y + 1] += 0.125  # center right
+                            array[x][y + 1] += 1  # center right
 
                     if (y >= 1 and y <= self.ncols - 1) and (x >= 0 and x <= self.nrows - 1):
                         if array[x][y - 1] != -2:
-                            array[x][y - 1] += 0.125  # center left
+                            array[x][y - 1] += 1  # center left
 
                     if (y >= 1 and y <= self.ncols - 1) and (x >= 1 and x <= self.nrows - 1):
                         if array[x - 1][y - 1] != -2:
-                            array[x - 1][y - 1] += 0.125  # top left
+                            array[x - 1][y - 1] += 1  # top left
 
                     if (y >= 0 and y <= self.ncols - 2) and (x >= 1 and x <= self.nrows - 1):
                         if array[x - 1][y + 1] != -2:
-                            array[x - 1][y + 1] += 0.125  # top right
+                            array[x - 1][y + 1] += 1  # top right
 
                     if (y >= 0 and y <= self.ncols - 1) and (x >= 1 and x <= self.nrows - 1):
                         if array[x - 1][y] != -2:
-                            array[x - 1][y] += 0.125  # top center
+                            array[x - 1][y] += 1  # top center
 
                     if (y >= 0 and y <= self.ncols - 2) and (x >= 0 and x <= self.nrows - 2):
                         if array[x + 1][y + 1] != -2:
-                            array[x + 1][y + 1] += 0.125  # bottom right
+                            array[x + 1][y + 1] += 1  # bottom right
 
                     if (y >= 1 and y <= self.ncols - 1) and (x >= 0 and x <= self.nrows - 2):
                         if array[x + 1][y - 1] != -2:
-                            array[x + 1][y - 1] += 0.125  # bottom left
+                            array[x + 1][y - 1] += 1  # bottom left
 
                     if (y >= 0 and y <= self.ncols - 1) and (x >= 0 and x <= self.nrows - 2):
                         if array[x + 1][y] != -2:
-                            array[x + 1][y] += 0.125  # bottom center
+                            array[x + 1][y] += 1  # bottom center
 
                     isValid = False
         return array
@@ -81,52 +91,44 @@ class Environment():
 
         if (y >= 0 and y <= self.ncols - 2) and (x >= 0 and x <= self.nrows - 1):
             cells_arround.append(
-                {"value": array[x][y + 1] * 8, "x": x, "y": y + 1})
+                {"value": array[x][y + 1], "x": x, "y": y + 1})
 
         if (y >= 1 and y <= self.ncols - 1) and (x >= 0 and x <= self.nrows - 1):
             cells_arround.append(
-                {"value": array[x][y - 1] * 8, "x": x, "y": y - 1})
+                {"value": array[x][y - 1], "x": x, "y": y - 1})
 
         if (y >= 1 and y <= self.ncols - 1) and (x >= 1 and x <= self.nrows - 1):
             cells_arround.append(
-                {"value": array[x - 1][y - 1] * 8, "x": x - 1, "y": y - 1})
+                {"value": array[x - 1][y - 1], "x": x - 1, "y": y - 1})
 
         if (y >= 0 and y <= self.ncols - 2) and (x >= 1 and x <= self.nrows - 1):
             cells_arround.append(
-                {"value": array[x - 1][y + 1] * 8, "x": x - 1, "y": y + 1})
+                {"value": array[x - 1][y + 1], "x": x - 1, "y": y + 1})
 
         if (y >= 0 and y <= self.ncols - 1) and (x >= 1 and x <= self.nrows - 1):
             cells_arround.append(
-                {"value": array[x - 1][y] * 8, "x": x - 1, "y": y})
+                {"value": array[x - 1][y], "x": x - 1, "y": y})
 
         if (y >= 0 and y <= self.ncols - 2) and (x >= 0 and x <= self.nrows - 2):
             cells_arround.append(
-                {"value": array[x + 1][y + 1] * 8, "x": x + 1, "y": y + 1})
+                {"value": array[x + 1][y + 1], "x": x + 1, "y": y + 1})
 
         if (y >= 1 and y <= self.ncols - 1) and (x >= 0 and x <= self.nrows - 2):
             cells_arround.append(
-                {"value": array[x + 1][y - 1] * 8, "x": x + 1, "y": y - 1})
+                {"value": array[x + 1][y - 1], "x": x + 1, "y": y - 1})
 
         if (y >= 0 and y <= self.ncols - 1) and (x >= 0 and x <= self.nrows - 2):
             cells_arround.append(
-                {"value": array[x + 1][y] * 8, "x": x + 1, "y": y})
+                {"value": array[x + 1][y], "x": x + 1, "y": y})
 
         return cells_arround
 
-    def discover_cell(self, x, y, guess_move):
+    def discover_cell(self, x, y):
         done = False
         is_win = 0
+        player_board = self.playing_board.tolist()
 
-        if guess_move:
-            # guess move should always be negative reward
-            reward = self.rewards['guess']
-            if self.board[x][y] == -2:  # if lose
-                done = True
-            elif self.is_finished(x, y):  # if win
-                done = True
-                is_win = 1
-
-        elif self.board[x][y] == -2:  # if lose
+        if self.board[x][y] == -2:  # if lose
             reward = self.rewards['lose']
             done = True
 
@@ -135,11 +137,16 @@ class Environment():
             done = True
             is_win = 1
 
-        else:  # if select a correct case
-            if self.playing_board[x][y] == -1:
-                reward = self.rewards['progress']
+        # if select an already known cell
+        elif player_board[x][y] != -1.0:
+            reward = self.rewards['no_progress']
+
+        else:
+            cells_around = self.get_cells_around(x, y)
+            if all(v["value"] == -1 for v in cells_around):
+                reward = self.rewards['guess']
             else:
-                reward = self.rewards['no_progress']
+                reward = self.rewards['progress']
 
         self.playing_board[x][y] = self.board[x][y]
 

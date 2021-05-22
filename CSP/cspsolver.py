@@ -40,7 +40,10 @@ class Variable:
             return(sum(1 for domain in self.current_domain if domain))
 
     def remove_domain(self, domain):
-        self.current_domain[self.domain.index(domain)] = False
+        try:
+            self.current_domain[self.domain.index(domain)] = False
+        except:
+            print("Not in the domain list")
 
     def get_info(self):
         print("Variable", self.name, self.domain, self.current_domain)
