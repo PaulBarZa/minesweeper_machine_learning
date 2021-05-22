@@ -3,16 +3,15 @@ sys.path.insert(1, "environment")
 sys.path.insert(2, "CSP")
 
 from environment import Environment
-from cspinit import CSP_Model
-from csp_main import get_cell
-from DQNAgent import *
+from csp_model import CSP_Model
+from agent import *
 from math import *
 import random
 import pickle
 import numpy as np
 
-STATS_EVERY = 500  # calculate stats every X games
-SAVE_MODEL_EVERY = 1000  # save model and replay every X episodes
+STATS_EVERY = 1_000  # calculate stats every X games
+SAVE_MODEL_EVERY = 5_000  # save model and replay every X episodes
 
 # Game parameters
 RANDOM = False
@@ -23,9 +22,9 @@ MAX_MINES_PERCENT = 15
 # Size
 ROWS = 6
 COLS = 6
-MINES = 2
+MINES = 6
 
-MODEL_NAME = 'model_6x6x2_2.1.h5'
+MODEL_NAME = 'model_6x6x6_shaping.h5'
 
 
 def Write_in_file(filename, message):
@@ -43,7 +42,7 @@ if __name__ == "__main__":
     Write_in_file("DDQLN/stats.txt",
                   f"\n - - - Starting parameters : - Size : {ROWS}x{COLS}x{MINES} (Random : {RANDOM}), Model : {MODEL_NAME}, Memory size : {len(agent.replay_memory)} - - -")
     index = 0
-    for i in range(SAVE_MODEL_EVERY * 25):
+    for i in range(SAVE_MODEL_EVERY * 20):
         index += 1
         # Play on random boards
         if RANDOM:
@@ -54,9 +53,7 @@ if __name__ == "__main__":
             MINES = ceil(percent * (ROWS * COLS))
 
         env = Environment(ROWS, COLS, MINES)
-
-        csp_model = CSP_Model(env)
-
+        csp_model = CSP_Model(env, MINES)
         agent.set_env(env)
 
         nb_move = 0
@@ -76,7 +73,7 @@ if __name__ == "__main__":
 
             move = agent.get_move(state)
             # print("agent move", move)
-            find_cell, cells = get_cell(env, csp_model)
+            find_cell, cells = csp_model.get_cell()
             # print("CSP coords", cells)
             coords = env.coords_array[move]
             # print("agent coords", coords)

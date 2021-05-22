@@ -3,174 +3,9 @@ import sys
 sys.path.insert(1, "environment")
 
 from environment import Environment
-from cspinit import CSP_Model
+from csp_model import CSP_Model
 import random
 import numpy as np
-
-
-def solve(env, csp_model, mines):
-    done = False
-    board = env.get_player_board()
-
-    while not done:
-        # print(board)
-        # print("---------")
-        find_cell, cells = get_cell(env, csp_model)
-
-        if not find_cell:
-            row = random.randint(0, env.nrows - 1)
-            col = random.randint(0, env.ncols - 1)
-            # row, col = get_best_cell_proba(csp_model)
-            _, _, done, _ = env.discover_cell(row, col)
-        else:
-            for cell in cells:
-                _, _, is_done, _ = env.discover_cell(cell[0], cell[1])
-                if is_done:
-                    done = is_done
-
-        # print("Find cell ", find_cell)
-    return env.remaining_mines(board) == mines
-
-
-def get_cell(env, csp_model):
-
-    find_cell = False
-    cells = []
-    board = env.get_player_board()
-
-    csp_model.actualize_model()
-
-    gac_propagotor(csp_model)
-
-    set_propagator(csp_model)
-
-    for variable in csp_model.get_variables():
-
-        try:
-            cell = variable.name.split()
-            row = int(cell[0])
-            col = int(cell[1])
-        except:
-            # continue if it's not a board variable or end_game constraint.
-            continue
-
-        if variable.value == 0:
-            if board[row][col] == -1:
-                find_cell = True
-                cells.append([row, col])
-
-    return find_cell, cells
-
-
-def gac_propagotor(csp_model):
-
-    constraints_copy = csp_model.get_constraints().copy()
-
-    index = 0
-    while index < len(constraints_copy):
-
-        constraint = constraints_copy[index]
-        variables = constraint.get_variables()
-
-        for variable in variables:
-
-            current_domain = variable.get_current_domain()
-
-            found = False
-            for domain in current_domain:
-
-                constraint.actualize_variables_value()
-
-                if constraint.is_valid_domain(variable, domain):
-                    continue
-                else:
-                    found = True
-                    # Remove domain from current domain
-                    variable.remove_domain(domain)
-                    if not variable.current_domain_size():
-                        constraints_copy = []
-                        return False
-            # Add constraint who have the removed var to loop on it again
-            if found:
-                constraints_ = list(
-                    csp_model.constraints_with_variables[variable])
-                for constraint in constraints_:
-                    if constraint not in constraints_copy[index:]:
-                        constraints_copy.append(constraint)
-        index += 1
-
-        if index > 1500:
-            return True
-
-    return True
-
-
-def set_propagator(csp_model):
-
-    constraints_copy = csp_model.get_constraints().copy()
-
-    for constraint in constraints_copy:
-        if constraint.name == "":
-            # print("Constraint name's " " ")
-            # constraint.get_info()
-            unknown_variables = constraint.get_unknown_variables()
-            for unknown_var in unknown_variables:
-                verify_variables_domain(unknown_var)
-
-
-def verify_variables_domain(unknown_variable):
-    if unknown_variable.current_domain_size() == 1:
-        if unknown_variable.value == None:
-            unknown_variable.value = unknown_variable.get_current_domain()[0]
-
-
-def get_best_cell_proba(csp_model):
-
-    constraints_copy = csp_model.get_constraints().copy()
-    variables = actualize_variables_proba(constraints_copy)
-    # print(variables)
-    best_variable = variables[0]
-
-    for variable in variables:
-        if variable.mines_proba < best_variable.mines_proba:
-            best_variable = variable
-
-    cell = best_variable.name.split()
-
-    return cell[0], cell[1]
-
-
-def actualize_variables_proba(constraints):
-    index = 0
-    while index < len(constraints):
-
-        constraint = constraints[index]
-
-        possible_values = list(constraint.possible_values)
-        if not len(possible_values) or constraint.name == "":
-            continue
-        mines_number = sum(possible_values[0])
-        variable_number = len(constraint.variables)
-        proba = round(mines_number / variable_number, 2)
-
-        variables = constraint.get_variables()
-
-        modify = False
-        for variable in variables:
-            if variable.mines_proba != proba:
-                variable.mines_proba = proba
-                modify = True
-
-        if modify:
-            constraints_ = list(
-                csp_model.constraints_with_variables[variable])
-            for constraint in constraints_:
-                if constraint not in constraints[index:]:
-                    constraints.append(constraint)
-
-        index += 1
-
-    return variables
 
 
 def get_starting_coord(choice, nrows, ncols):
@@ -179,11 +14,11 @@ def get_starting_coord(choice, nrows, ncols):
     return starting_coords[choice][0], starting_coords[choice][1]
 
 
-EPISODE = 200
+EPISODE = 1_000
 STATS_EVERY = EPISODE
-ROWS = 12
-COLS = 12
-MINES = 50
+ROWS = 6
+COLS = 6
+MINES = 6
 
 if __name__ == "__main__":
     wins_list = []
@@ -210,9 +45,9 @@ if __name__ == "__main__":
 
             _, _, done, _ = env.discover_cell(row, col)
 
-        csp_model = CSP_Model(env)
+        csp_model = CSP_Model(env, MINES)
 
-        is_win = solve(env, csp_model, MINES)
+        is_win = csp_model.solve()
 
         if is_win:
             wins_list.append(1)
