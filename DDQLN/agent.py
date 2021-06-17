@@ -3,7 +3,7 @@ import numpy as np
 import os.path
 from tensorflow import keras
 from tensorflow.keras import Input, Model
-from tensorflow.keras.layers import Conv2D, Dense, Flatten, add
+from tensorflow.keras.layers import Conv2D, Dense, Flatten, concatenate
 from random import sample
 from collections import deque
 from ddqln_main import*
@@ -11,38 +11,32 @@ from ddqln_main import*
 
 # Exploration settings
 epsilon = 0.99
-# epsilon = 1
-EPSILON_DECAY = 0.999975
-# EPSILON_DECAY = 1
 EPSILON_MIN = 0.01
 
 # Deep Q-learning model parameters
-learn_rate = 0.01
-# learn_rate = 0
-LEARN_DECAY = 0.999975
-# LEARN_DECAY = 1
-LEARN_MIN = 0.0001
-DISCOUNT = 0.1
+learn_rate = 0.00004
+# LEARN_MIN = 0.0001
+DISCOUNT = 0
+DECAY = 0.999975
 
 # Memory & Target
-SWAP_TARGET = 5
-BATCH_SIZE = 64
+SWAP_TARGET = 10
+BATCH_SIZE = 400
 REPLAY_MIN_SIZE = 1_000
-REPLAY_MAX_SIZE = 50_000
+REPLAY_MAX_SIZE = 70_000
 
 
 class DQNAgent(object):
-    def __init__(self, env):
+    def __init__(self, env, mode):
         # Environment
         self.env = env
+        self.mode = mode
         # Deep Q-learning Parameters
         self.learn_rate = learn_rate
         self.epsilon = epsilon
         # Init model and target model
         self.model = self.load_model()
         self.target_model = self.load_target_model()
-        # Model weights are randomely defined, and we don't want that
-        # self.target_model.set_weights(self.model.get_weights())
         self.replay_memory = self.load_replay_memory()
         self.target_update_counter = 0
 
@@ -53,8 +47,27 @@ class DQNAgent(object):
         # #
         # Get a move prediction
         # #
-        board = state.reshape(1, self.env.ntiles)
-        unsolved = [i for i, x in enumerate(board[0]) if x == -0.125]
+
+        if self.mode == "CONDENSED":
+            unknown_value = -1
+            state_dim = 2
+
+            board_first_channel = []
+            i = 0
+            for row in state:
+                board_first_channel.append([])
+                for cell in row:
+                    board_first_channel[i].append(cell[0])
+                i += 1
+
+            board = np.array(board_first_channel).reshape(1, self.env.ntiles)
+
+        elif self.mode == "IMAGE":
+            unknown_value = -0.125
+            state_dim = 1
+            board = state.reshape(1, self.env.ntiles)
+
+        unsolved = [i for i, x in enumerate(board[0]) if x == unknown_value]
 
         # Random selection b/w exploiration or exploitation
         rand = np.random.random()
@@ -65,11 +78,10 @@ class DQNAgent(object):
        # Exploit
         else:
             moves = self.model.predict(np.reshape(
-                state, (1, self.env.nrows, self.env.ncols, 1)))
-            print("--- Moves ---")
-            print(moves)
+                state, (1, self.env.nrows, self.env.ncols, state_dim)))
+
             # set already clicked tiles to min value
-            moves[board != -0.125] = np.min(moves)
+            moves[board != unknown_value] = np.min(moves)
             move = np.argmax(moves)
 
         return move
@@ -90,54 +102,50 @@ class DQNAgent(object):
     def load_target_model(self):
         if os.path.isfile(f'DDQLN/targets/{MODEL_NAME}'):
             return keras.models.load_model(f'DDQLN/targets/{MODEL_NAME}')
-        return self.init_model()
+        return self.model
 
     def init_model(self):
-        # input = Input(shape=(self.env.nrows, self.env.ncols, 1))
 
-        # cnv2d_1 = Conv2D(64, (3, 3), activation='relu',
-        #                  padding='same')(input)
-        # cnv2d_2 = Conv2D(64, (3, 3), activation='relu',
-        #                  padding='same')(cnv2d_1)
+        if self.mode == "IMAGE":
 
-        # b1_add = add([cnv2d_1, cnv2d_2])
+            input = Input(shape=(self.env.nrows, self.env.ncols, 1))
 
-        # cnv2d_3 = Conv2D(64, (3, 3), activation='relu',
-        #                  padding='same')(b1_add)
+            cnv2d_1 = Conv2D(128, (3, 3), activation='relu',
+                             padding='same')(input)
+            cnv2d_2 = Conv2D(128, (3, 3), activation='relu',
+                             padding='same')(cnv2d_1)
 
-        # b2_add = add([cnv2d_2, cnv2d_3])
+            b1_add = concatenate([cnv2d_1, cnv2d_2])
 
-        # cnv2d_4 = Conv2D(64, (3, 3), activation='relu',
-        #                  padding='same')(b2_add)
+            cnv2d_3 = Conv2D(128, (3, 3), activation='relu',
+                             padding='same')(b1_add)
+            cnv2d_4 = Conv2D(128, (3, 3), activation='relu',
+                             padding='same')(cnv2d_3)
 
-        # flatten = Flatten()(cnv2d_4)
+            b2_add = concatenate([cnv2d_3, cnv2d_4])
 
-        # dense_1 = Dense(512, activation='relu')(flatten)
-        # dense_2 = Dense(512, activation='relu')(dense_1)
-        # output = Dense(self.env.ntiles, activation='linear')(dense_2)
+            flatten = Flatten()(b2_add)
 
-        # model = Model(input, output)
+            dense_1 = Dense(512, activation='relu')(flatten)
+            dense_2 = Dense(512, activation='relu')(dense_1)
+            output = Dense(self.env.ntiles, activation='linear')(dense_2)
 
-        # model.compile(optimizer=keras.optimizers.Adam(lr=self.learn_rate, epsilon=1e-4),
-        #               loss="mse")
+            model = Model(input, output)
 
-        # return model
+        elif self.mode == "CONDENSED":
 
-        model = tf.keras.Sequential([
-            Conv2D(128, (3, 3), activation='relu', padding='same',
-                   input_shape=(self.env.nrows, self.env.ncols, 1)),
-            Conv2D(
-                128, (3, 3), activation='relu', padding='same'),
-            Conv2D(
-                128, (3, 3), activation='relu', padding='same'),
-            Conv2D(
-                128, (3, 3), activation='relu', padding='same'),
-            Flatten(),
-            Dense(512, activation='relu'),
-            Dense(512, activation='relu'),
-            Dense(self.env.ntiles, activation='linear')])
+            model = tf.keras.Sequential([
+                Conv2D(18, (5, 5), activation=tf.nn.relu, padding='same',
+                       input_shape=(self.env.nrows, self.env.ncols, 2)),
+                Conv2D(
+                    36, (3, 3), activation=tf.nn.relu, padding='same'),
+                Flatten(),
+                Dense(288, activation='relu'),
+                Dense(220, activation='relu'),
+                Dense(200, activation='relu'),
+                Dense(self.env.ntiles, activation='softmax')])
 
-        model.compile(optimizer=keras.optimizers.Adam(lr=self.learn_rate, epsilon=1e-4),
+        model.compile(optimizer=keras.optimizers.Adam(learning_rate=self.learn_rate, epsilon=1e-4),
                       loss="mse")
 
         return model
@@ -166,7 +174,7 @@ class DQNAgent(object):
 
         X, Y = [], []
 
-        for i, (current_state, action, reward, new_current_state, done) in enumerate(memory_sample):
+        for i, (current_state, action, reward, _, done) in enumerate(memory_sample):
             # Calcul new q value
             if not done:
                 max_future_q = np.max(future_qs_list[i])
@@ -192,10 +200,10 @@ class DQNAgent(object):
             self.target_update_counter = 0
 
         # Decay epsilon
-        self.epsilon = max(EPSILON_MIN, self.epsilon * EPSILON_DECAY)
+        self.epsilon = max(EPSILON_MIN, self.epsilon * DECAY)
 
         # Decay learn_rate
-        self.learn_rate = max(LEARN_MIN, self.learn_rate * LEARN_DECAY)
+        # self.learn_rate = max(LEARN_MIN, self.learn_rate * DECAY)
 
     @ tf.function  # mode graph
     def model_predict(self, board):

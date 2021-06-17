@@ -4,50 +4,51 @@ sys.path.insert(1, "environment")
 
 from environment import Environment
 from csp_model import CSP_Model
+from csp_solver import CSP_Solver
 import random
 import numpy as np
+from math import ceil
 
+# Prevents groups of cells greater than X when calculating probabilities
+BOARD_PART_LEN = 15
 
-def get_starting_coord(choice, nrows, ncols):
-    starting_coords = [[0, 0], [0, ncols - 1],
-                       [nrows - 1, 0], [nrows - 1, ncols - 1]]
-    return starting_coords[choice][0], starting_coords[choice][1]
+EPISODE = 500
+STATS_EVERY = 1_000
 
+RANDOM_SIZE = False
+MIN_SIZE = 5
+MAX_SIZE = 25
 
-EPISODE = 1_000
-STATS_EVERY = EPISODE
-ROWS = 6
-COLS = 6
-MINES = 6
+RANDOM_DENSITY = False
+MIN_DENSITY = 5  # In percent
+MAX_DENSITY = 25
+
+ROWS = 16
+COLS = 16
+MINES = 13
 
 if __name__ == "__main__":
+
     wins_list = []
     index = 0
     for i in range(EPISODE):
-        print("Game : ", i)
         index += 1
+        # Play on random size boards
+        if RANDOM_SIZE:
+            ROWS = random.randint(MIN_SIZE, MAX_SIZE)
+            COLS = random.randint(MIN_SIZE, MAX_SIZE)
+        if RANDOM_DENSITY:
+            density = random.randint(MIN_DENSITY, MAX_DENSITY) / 100
+            MINES = ceil(density * (ROWS * COLS))
+
+        print("Game : ", i, " Size: ", ROWS, COLS, MINES)
 
         env = Environment(ROWS, COLS, MINES)
-
-        done = True
-        corner_mined = 0
-        while done:
-            if corner_mined > 3:
-                row = random.randint(0, env.nrows - 1)
-                col = random.randint(0, env.ncols - 1)
-
-            else:
-                starting_choice = random.randint(0, 3)
-                row, col = get_starting_coord(
-                    starting_choice, env.nrows, env.ncols)
-
-                corner_mined += 1
-
-            _, _, done, _ = env.discover_cell(row, col)
-
+        env.do_first_move(False)
         csp_model = CSP_Model(env, MINES)
+        solver = CSP_Solver(env, csp_model, BOARD_PART_LEN)
 
-        is_win = csp_model.solve()
+        is_win = solver.solve()
 
         if is_win:
             wins_list.append(1)
@@ -59,5 +60,5 @@ if __name__ == "__main__":
                 np.sum(wins_list[-STATS_EVERY:]) / STATS_EVERY, 2)
             fichier = open("CSP/stats.txt", "a")
             fichier.write(
-                f"\n - Episode: {index}, Win rate : {win_rate}, Size : {ROWS}x{COLS}x{MINES}")
+                f"\n - Episode: {index}, Win rate : {win_rate}, Size : {ROWS}x{COLS}x{MINES}, Max length: {BOARD_PART_LEN}")
             fichier.close()

@@ -1,3 +1,4 @@
 .vscode/
-DDQLN/stats.txt
-CSP/stats.txt
+__pycache__/
+
+

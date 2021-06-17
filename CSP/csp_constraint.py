@@ -5,25 +5,6 @@ class Constraint:
         self.possible_values = dict()
         self.valid_domain = dict()
 
-    def actualize_variables_value(self):
-        values = []
-        possible_values = list(self.possible_values.items())
-
-        for i in range(len(possible_values)):
-            # If possible value is true
-            if possible_values[i][1]:
-                # For each possible value
-                for val in possible_values[i][0]:
-                    values.append(val)
-
-        variables_nb = len(self.variables)
-        if len(values) == variables_nb:
-            for i in range(variables_nb):
-                if self.name == "end_game":
-                    self.variables[i].value = 1 - values[i]
-                else:
-                    self.variables[i].value = values[i]
-
     def add_possible_values(self, verify_values):
         # Possible values are values that verify the summ of mines around
         for value in verify_values:
@@ -50,6 +31,9 @@ class Constraint:
     def get_possible_values(self):
         return list(self.possible_values)
 
+    def get_sum(self):
+        return sum(list(self.possible_values)[0])
+
     def get_unknown_variables(self):
         unknown_variables = []
 
@@ -71,3 +55,12 @@ class Constraint:
             if not var.in_current_domain(value[i]):
                 return False
         return True
+
+    def contain_no_cell_variable(self):
+        no_cell_variable = False
+
+        for variable in self.get_variables():
+            if not variable.is_cell():
+                no_cell_variable = True
+
+        return no_cell_variable

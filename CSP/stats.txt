@@ -1,0 +1,40 @@
+1. Simple Propagator
+ - Episode: 1000, Win rate : 0.91, Size : 16x16x10
+ - Episode: 1000, Win rate : 0.85, Size : 16x16x15
+ - Episode: 1000, Win rate : 0.76, Size : 16x16x20
+ - Episode: 1000, Win rate : 0.7, Size : 16x16x25
+ - Episode: 1000, Win rate : 0.55, Size : 16x16x30
+ - Episode: 1000, Win rate : 0.35, Size : 16x16x35
+ - Episode: 1000, Win rate : 0.2, Size : 16x16x40
+ - Episode: 1000, Win rate : 0.05, Size : 16x16x45
+
+2. Set propagator
+ - Episode: 1000, Win rate : 0.9, Size : 16x16x10
+ - Episode: 1000, Win rate : 0.85, Size : 16x16x15
+ - Episode: 1000, Win rate : 0.81, Size : 16x16x20
+ - Episode: 1000, Win rate : 0.72, Size : 16x16x25
+ - Episode: 1000, Win rate : 0.57, Size : 16x16x30
+ - Episode: 1000, Win rate : 0.44, Size : 16x16x35
+ - Episode: 1000, Win rate : 0.27, Size : 16x16x40
+ - Episode: 1000, Win rate : 0.13, Size : 16x16x45
+
+3. First cell is a corner cell
+ - Episode: 1000, Win rate : 0.9, Size : 16x16x10
+ - Episode: 1000, Win rate : 0.83, Size : 16x16x15
+ - Episode: 1000, Win rate : 0.77, Size : 16x16x20
+ - Episode: 1000, Win rate : 0.72, Size : 16x16x25
+ - Episode: 1000, Win rate : 0.61, Size : 16x16x30
+ - Episode: 1000, Win rate : 0.46, Size : 16x16x35
+ - Episode: 1000, Win rate : 0.3, Size : 16x16x40
+ - Episode: 1000, Win rate : 0.14, Size : 16x16x45
+
+ 4. Binary solver
+ - Episode: 300, Win rate : 1.0, Size : 16x16x10
+ - Episode: 300, Win rate : 0.98, Size : 16x16x15
+ - Episode: 300, Win rate : 0.97, Size : 16x16x20
+ - Episode: 300, Win rate : 0.92, Size : 16x16x25
+ - Episode: 300, Win rate : 0.81, Size : 16x16x30
+ - Episode: 300, Win rate : 0.73, Size : 16x16x35
+ - Episode: 100, Win rate : 0.51, Size : 16x16x40
+ - Episode: 100, Win rate : 0.25, Size : 16x16x45
+ - Episode: 100, Win rate : 0.08, Size : 16x16x50
