@@ -36,3 +36,254 @@
  - Episode: 30000, Win rate : 0.93, Median reward : 1.6, Epsilon : 0.02634067381984184
  - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed.h5 - - - - -
  
+
+ - - - Starting parameters : - Size : 6x6x3 (Random : False), Model : model_6x6x3_condensed.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.1, Median reward : -0.1, Epsilon : 0.9515616224523263
+ - Episode: 2000, Win rate : 0.1, Median reward : -0.1, Epsilon : 0.8928589808003458
+ - Episode: 3000, Win rate : 0.13, Median reward : -0.1, Epsilon : 0.8384901775167118
+ - Episode: 4000, Win rate : 0.11, Median reward : -0.1, Epsilon : 0.7872155334531579
+ - Episode: 5000, Win rate : 0.12, Median reward : -0.1, Epsilon : 0.7368256162185676
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+ - Episode: 6000, Win rate : 0.14, Median reward : -0.1, Epsilon : 0.6872515487240647
+ - Episode: 7000, Win rate : 0.16, Median reward : -0.1, Epsilon : 0.6423925316006276
+ - Episode: 8000, Win rate : 0.17, Median reward : -0.1, Epsilon : 0.6003565272562964
+ - Episode: 9000, Win rate : 0.16, Median reward : -0.1, Epsilon : 0.5604823945492744
+ - Episode: 10000, Win rate : 0.16, Median reward : -0.1, Epsilon : 0.5239765806308808
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+ - Episode: 11000, Win rate : 0.16, Median reward : -0.0, Epsilon : 0.48896754908339835
+ - Episode: 12000, Win rate : 0.19, Median reward : 0.4, Epsilon : 0.45624058064781536
+ - Episode: 13000, Win rate : 0.18, Median reward : 0.0, Epsilon : 0.42657765236121964
+ - Episode: 14000, Win rate : 0.19, Median reward : -0.0, Epsilon : 0.3973603423307301
+ - Episode: 15000, Win rate : 0.2, Median reward : 0.4, Epsilon : 0.3701441948100275
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+ - Episode: 16000, Win rate : 0.19, Median reward : 0.4, Epsilon : 0.34485249011632396
+ - Episode: 17000, Win rate : 0.2, Median reward : 0.4, Epsilon : 0.3215460878651812
+ - Episode: 18000, Win rate : 0.21, Median reward : 0.8, Epsilon : 0.29924570373637965
+ - Episode: 19000, Win rate : 0.2, Median reward : 0.6, Epsilon : 0.2785963872650005
+ - Episode: 20000, Win rate : 0.23, Median reward : 0.8, Epsilon : 0.25878902951472077
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+ - Episode: 21000, Win rate : 0.23, Median reward : 0.8, Epsilon : 0.24052818047313818
+ - Episode: 22000, Win rate : 0.24, Median reward : 0.8, Epsilon : 0.22309246272206334
+ - Episode: 23000, Win rate : 0.24, Median reward : 0.8, Epsilon : 0.2073349084202923
+ - Episode: 24000, Win rate : 0.25, Median reward : 0.8, Epsilon : 0.19280117806855396
+ - Episode: 25000, Win rate : 0.24, Median reward : 0.8, Epsilon : 0.17888775752110203
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+ - Episode: 26000, Win rate : 0.27, Median reward : 0.8, Epsilon : 0.16575447100064655
+ - Episode: 27000, Win rate : 0.24, Median reward : 0.8, Epsilon : 0.15384285677091603
+ - Episode: 28000, Win rate : 0.24, Median reward : 0.8, Epsilon : 0.1429586966121363
+ - Episode: 29000, Win rate : 0.26, Median reward : 0.8, Epsilon : 0.13243670034337263
+ - Episode: 30000, Win rate : 0.26, Median reward : 0.8, Epsilon : 0.12281496279921378
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_6x6x2_condensed_no_shaping.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.23, Median reward : -0.1, Epsilon : 0.9680944583311014
+ - Episode: 2000, Win rate : 0.26, Median reward : -0.1, Epsilon : 0.92426985915482
+ - Episode: 3000, Win rate : 0.27, Median reward : -0.1, Epsilon : 0.8804899182052262
+ - Episode: 4000, Win rate : 0.25, Median reward : -0.1, Epsilon : 0.8396649005635959
+ - Episode: 5000, Win rate : 0.29, Median reward : -0.1, Epsilon : 0.8006527157117078
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 6000, Win rate : 0.29, Median reward : -0.1, Epsilon : 0.7618705573487692
+ - Episode: 7000, Win rate : 0.3, Median reward : -0.1, Epsilon : 0.7249488118832137
+ - Episode: 8000, Win rate : 0.32, Median reward : -0.1, Epsilon : 0.6899370967482576
+ - Episode: 9000, Win rate : 0.3, Median reward : -0.1, Epsilon : 0.6565342145445322
+ - Episode: 10000, Win rate : 0.36, Median reward : -0.1, Epsilon : 0.6245767280687922
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 11000, Win rate : 0.36, Median reward : -0.1, Epsilon : 0.5949179977165608
+ - Episode: 12000, Win rate : 0.38, Median reward : 0.4, Epsilon : 0.5659455957560495
+ - Episode: 13000, Win rate : 0.36, Median reward : 0.4, Epsilon : 0.537859469401737
+ - Episode: 14000, Win rate : 0.38, Median reward : 0.4, Epsilon : 0.5127927257637287
+ - Episode: 15000, Win rate : 0.41, Median reward : 0.8, Epsilon : 0.48746626451183717
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 16000, Win rate : 0.4, Median reward : 0.8, Epsilon : 0.4638658837111523
+ - Episode: 17000, Win rate : 0.43, Median reward : 0.8, Epsilon : 0.4418607818215851
+ - Episode: 18000, Win rate : 0.43, Median reward : 0.8, Epsilon : 0.4199430988877623
+ - Episode: 19000, Win rate : 0.39, Median reward : 0.8, Epsilon : 0.39888317523688244
+ - Episode: 20000, Win rate : 0.45, Median reward : 0.8, Epsilon : 0.37841554669360666
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 21000, Win rate : 0.41, Median reward : 0.8, Epsilon : 0.35969889820515916
+ - Episode: 22000, Win rate : 0.45, Median reward : 0.8, Epsilon : 0.34222440097365764
+ - Episode: 23000, Win rate : 0.46, Median reward : 1.0, Epsilon : 0.3249320283626647
+ - Episode: 24000, Win rate : 0.43, Median reward : 0.8, Epsilon : 0.3078970099637197
+ - Episode: 25000, Win rate : 0.48, Median reward : 1.0, Epsilon : 0.2921711289048747
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 26000, Win rate : 0.44, Median reward : 0.8, Epsilon : 0.27750502600050114
+ - Episode: 27000, Win rate : 0.44, Median reward : 0.8, Epsilon : 0.26335117044076073
+ - Episode: 28000, Win rate : 0.46, Median reward : 0.8, Epsilon : 0.2500192065131921
+ - Episode: 29000, Win rate : 0.48, Median reward : 1.0, Epsilon : 0.23715456003917865
+ - Episode: 30000, Win rate : 0.49, Median reward : 1.0, Epsilon : 0.22452485114208473
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 31000, Win rate : 0.5, Median reward : 1.0, Epsilon : 0.21321706911843136
+ - Episode: 32000, Win rate : 0.49, Median reward : 1.0, Epsilon : 0.20244335165196756
+ - Episode: 33000, Win rate : 0.47, Median reward : 1.0, Epsilon : 0.19214195535667605
+ - Episode: 34000, Win rate : 0.5, Median reward : 1.0, Epsilon : 0.18201403013732484
+ - Episode: 35000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.1725881478655713
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 36000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.16392474725456907
+ - Episode: 37000, Win rate : 0.49, Median reward : 1.0, Epsilon : 0.1557701972284596
+ - Episode: 38000, Win rate : 0.5, Median reward : 1.0, Epsilon : 0.14773663045878044
+ - Episode: 39000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.13995633601307061
+ - Episode: 40000, Win rate : 0.54, Median reward : 1.0, Epsilon : 0.1328346119873484
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 41000, Win rate : 0.54, Median reward : 1.0, Epsilon : 0.1258233775011271
+ - Episode: 42000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.11939096185612123
+ - Episode: 43000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.11331288074139645
+ - Episode: 44000, Win rate : 0.52, Median reward : 1.0, Epsilon : 0.10737229366540463
+ - Episode: 45000, Win rate : 0.53, Median reward : 1.0, Epsilon : 0.10176095705048846
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 46000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.09635611143011628
+ - Episode: 47000, Win rate : 0.54, Median reward : 1.0, Epsilon : 0.09140956871941139
+ - Episode: 48000, Win rate : 0.52, Median reward : 1.0, Epsilon : 0.08656317399851979
+ - Episode: 49000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.08217892093948223
+ - Episode: 50000, Win rate : 0.53, Median reward : 1.0, Epsilon : 0.07798747045011098
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 51000, Win rate : 0.54, Median reward : 1.0, Epsilon : 0.07373462342740746
+ - Episode: 52000, Win rate : 0.53, Median reward : 1.0, Epsilon : 0.07000711145711117
+ - Episode: 53000, Win rate : 0.55, Median reward : 1.0, Epsilon : 0.06634850033487961
+ - Episode: 54000, Win rate : 0.54, Median reward : 1.0, Epsilon : 0.06278055973779603
+ - Episode: 55000, Win rate : 0.55, Median reward : 1.0, Epsilon : 0.05944757224310342
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 56000, Win rate : 0.52, Median reward : 1.0, Epsilon : 0.05636616798108661
+ - Episode: 57000, Win rate : 0.55, Median reward : 1.0, Epsilon : 0.05338439317662644
+ - Episode: 58000, Win rate : 0.51, Median reward : 1.0, Epsilon : 0.050617267616192466
+ - Episode: 59000, Win rate : 0.54, Median reward : 1.0, Epsilon : 0.04797797761449795
+ - Episode: 60000, Win rate : 0.53, Median reward : 1.0, Epsilon : 0.04543312318799237
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_condensed_no_shaping.h5 - - - - -
+ - Episode: 61000, Win rate : 0.55, Median reward : 1.0, Epsilon : 0.043044770551236344
+ - Episode: 62000, Win rate : 0.58, Median reward : 1.0, Epsilon : 0.04074935717210526
+
+ - - - Starting parameters : - Size : 6x6x4 (Random : False), Model : model_6x6x4_condensed.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.04, Median reward : -0.1, Epsilon : 0.7582880128658671
+ - Episode: 2000, Win rate : 0.03, Median reward : -0.1, Epsilon : 0.5115977551925045
+ - Episode: 3000, Win rate : 0.04, Median reward : -0.1, Epsilon : 0.34442933748272553
+ - Episode: 4000, Win rate : 0.03, Median reward : -0.1, Epsilon : 0.22931888120091404
+ - Episode: 5000, Win rate : 0.04, Median reward : -0.1, Epsilon : 0.15180362516389664
+ - - - - - Save the model, target model & replay memory for model : model_6x6x4_condensed.h5 - - - - -
+ - Episode: 6000, Win rate : 0.04, Median reward : -0.1, Epsilon : 0.09954017869763311
+ - Episode: 7000, Win rate : 0.06, Median reward : 0.0, Epsilon : 0.06469341615402342
+ - Episode: 8000, Win rate : 0.06, Median reward : 0.4, Epsilon : 0.041731533247067715
+ - Episode: 9000, Win rate : 0.06, Median reward : 0.4, Epsilon : 0.026855737541931362
+ - Episode: 10000, Win rate : 0.07, Median reward : 0.4, Epsilon : 0.017042343863134125
+ - - - - - Save the model, target model & replay memory for model : model_6x6x4_condensed.h5 - - - - -
+ - Episode: 11000, Win rate : 0.07, Median reward : 0.8, Epsilon : 0.010736747304851866
+ - Episode: 12000, Win rate : 0.07, Median reward : 0.8, Epsilon : 0.01
+ - Episode: 13000, Win rate : 0.09, Median reward : 0.8, Epsilon : 0.01
+ - - - Starting parameters : - Size : 6x6x5 (Random : False), Model : model_6x6x5_condensed.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.7346809335508809
+ - Episode: 2000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.4804795942062445
+ - Episode: 3000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.31368305871892393
+ - Episode: 4000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.20455898887411336
+ - Episode: 5000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.13155878682275854
+ - - - - - Save the model, target model & replay memory for model : model_6x6x5_condensed.h5 - - - - -
+ - Episode: 6000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.0848853408518223
+ - Episode: 7000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.05336458931054509
+ - Episode: 8000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.03348987937118035
+ - Episode: 9000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.02111723353114222
+ - Episode: 10000, Win rate : 0.02, Median reward : 0.4, Epsilon : 0.01316332983181658
+
+ - - - Starting parameters : - Size : 6x6x5 (Random : False), Model : model_6x6x5_condensed_2.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.9324627409916081
+ - Episode: 2000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.8562206643792784
+ - Episode: 3000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.7838965226840151
+ - Episode: 4000, Win rate : 0.01, Median reward : -0.4, Epsilon : 0.7201798450146596
+ - Episode: 5000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.6623207257961499
+ - - - - - Save the model, target model & replay memory for model : model_6x6x5_condensed_2.h5 - - - - -
+ - Episode: 6000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.6100243598356019
+ - Episode: 7000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.5585380741374186
+ - Episode: 8000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.5110777229284451
+ - Episode: 9000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.4665175023273953
+ - Episode: 10000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.4245455741180139
+ - - - - - Save the model, target model & replay memory for model : model_6x6x5_condensed_2.h5 - - - - -
+ - Episode: 11000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.3884806065637051
+ - Episode: 12000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.35411336145672073
+ - Episode: 13000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.32366724557177057
+ - Episode: 14000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.2951591834398979
+ - Episode: 15000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.2689468168470324
+ - - - - - Save the model, target model & replay memory for model : model_6x6x5_condensed_2.h5 - - - - -
+ - Episode: 16000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.24417555281295455
+ - Episode: 17000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.222785917552091
+ - Episode: 18000, Win rate : 0.02, Median reward : 0.0, Epsilon : 0.20304144877509347
+ - Episode: 19000, Win rate : 0.01, Median reward : -0.0, Epsilon : 0.184783332220044
+ - Episode: 20000, Win rate : 0.01, Median reward : 0.0, Epsilon : 0.16785621679935187
+ - - - - - Save the model, target model & replay memory for model : model_6x6x5_condensed_2.h5 - - - - -
+ - Episode: 21000, Win rate : 0.02, Median reward : 0.4, Epsilon : 0.15233111616768663
+ - Episode: 22000, Win rate : 0.01, Median reward : 0.2, Epsilon : 0.13856372988112442
+ 
+ - - - Starting parameters : - Size : 6x6x2 (Random : False), Model : model_6x6x2_image.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.24, Median reward : -0.1, Epsilon : 0.9672719173891388
+ - Episode: 2000, Win rate : 0.27, Median reward : -0.1, Epsilon : 0.9227921913587214
+ - Episode: 3000, Win rate : 0.3, Median reward : -0.1, Epsilon : 0.8781157722884189
+ - Episode: 4000, Win rate : 0.3, Median reward : -0.1, Epsilon : 0.8363129075167196
+ - Episode: 5000, Win rate : 0.35, Median reward : 0.2, Epsilon : 0.7960820178869168
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_image.h5 - - - - -
+ - Episode: 6000, Win rate : 0.33, Median reward : -0.1, Epsilon : 0.7573886995188217
+ - Episode: 7000, Win rate : 0.36, Median reward : 0.4, Epsilon : 0.7209364404525007
+ - Episode: 8000, Win rate : 0.4, Median reward : 0.8, Epsilon : 0.6849702036456463
+ - Episode: 9000, Win rate : 0.42, Median reward : 0.8, Epsilon : 0.6512702641448964
+ - Episode: 10000, Win rate : 0.44, Median reward : 0.9, Epsilon : 0.6187022053942716
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_image.h5 - - - - -
+ - Episode: 1000, Win rate : 0.56, Median reward : 1.0, Epsilon : 0.3752638202494506
+ - Episode: 2000, Win rate : 0.67, Median reward : 1.0, Epsilon : 0.22648358944329225
+ - Episode: 3000, Win rate : 0.79, Median reward : 1.7, Epsilon : 0.13379894659610067
+ - Episode: 4000, Win rate : 0.88, Median reward : 1.9, Epsilon : 0.0788840325850024
+ - Episode: 5000, Win rate : 0.9, Median reward : 1.9, Epsilon : 0.04505530881123026
+ - - - - - Save the model, target model & replay memory for model : model_6x6x2_image.h5 - - - - -
+ 
+ - - - Starting parameters : - Size : 6x6x3 (Random : False), Model : model_6x6x3_image.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.11, Median reward : -0.1, Epsilon : 0.6975439698845616
+ - Episode: 2000, Win rate : 0.18, Median reward : -0.1, Epsilon : 0.36666300987163436
+ - Episode: 3000, Win rate : 0.36, Median reward : 1.0, Epsilon : 0.17129848776049078
+ - Episode: 4000, Win rate : 0.54, Median reward : 1.9, Epsilon : 0.0748371495402892
+ 
+ - - - Starting parameters : - Size : 6x6x4 (Random : False), Model : model_6x6x4_image.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.03, Median reward : -0.1, Epsilon : 0.5940107846256124
+ - Episode: 2000, Win rate : 0.07, Median reward : -0.1, Epsilon : 0.27601666596458113
+ - Episode: 3000, Win rate : 0.16, Median reward : 1.0, Epsilon : 0.11003327060606005
+ - Episode: 4000, Win rate : 0.28, Median reward : 1.7, Epsilon : 0.03923196136474887
+ 
+ - - - Starting parameters : - Size : 6x6x5 (Random : False), Model : model_6x6x5_image.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.01, Median reward : -0.1, Epsilon : 0.5715878250442962
+ - Episode: 2000, Win rate : 0.02, Median reward : -0.1, Epsilon : 0.24404982366804243
+ - Episode: 3000, Win rate : 0.04, Median reward : 0.8, Epsilon : 0.09389150674523902
+ 
+ - - - Starting parameters : - Size : 6x6x3 (Random : False), Model : model_6x6x3_condensed.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.08, Median reward : -0.1, Epsilon : 0.702901249435317
+ - Episode: 2000, Win rate : 0.09, Median reward : -0.1, Epsilon : 0.4011070295067468
+ - Episode: 3000, Win rate : 0.1, Median reward : -0.1, Epsilon : 0.21188771776315332
+ - Episode: 4000, Win rate : 0.15, Median reward : -0.1, Epsilon : 0.11378509665275661
+ - Episode: 5000, Win rate : 0.19, Median reward : 0.4, Epsilon : 0.059716837813009134
+ - - - - - Save the model, target model & replay memory for model : model_6x6x3_condensed.h5 - - - - -
+ - Episode: 6000, Win rate : 0.18, Median reward : 0.4, Epsilon : 0.030069513912151874
+ 
+ - - - Starting parameters : - Size : 8x8x3 (Random : False), Model : model_8x8x3_image.h5, Memory size : 0 - - -
+ - Episode: 1000, Win rate : 0.15, Median reward : -0.5, Epsilon : 0.9684575663703481
+ - Episode: 2000, Win rate : 0.14, Median reward : -0.1, Epsilon : 0.9235999979876468
+ - Episode: 3000, Win rate : 0.16, Median reward : -0.1, Epsilon : 0.8794999116552105
+ - Episode: 4000, Win rate : 0.2, Median reward : -0.1, Epsilon : 0.8370659373589974
+ - Episode: 5000, Win rate : 0.21, Median reward : -0.1, Epsilon : 0.7967390647593621
+ - - - Starting parameters : - Size : 8x8x3 (Random : False), Model : model_8x8x3_image.h5, Memory size : 9686 - - -
+ - Episode: 1000, Win rate : 0.23, Median reward : -0.1, Epsilon : 0.7596524915742416
+ - Episode: 2000, Win rate : 0.24, Median reward : -0.1, Epsilon : 0.7207990760985136
+ - Episode: 3000, Win rate : 0.27, Median reward : -0.1, Epsilon : 0.6843091403769928
+ - Episode: 4000, Win rate : 0.3, Median reward : -0.1, Epsilon : 0.648028122406534
+ - Episode: 5000, Win rate : 0.3, Median reward : -0.1, Epsilon : 0.6148685084896295
+ - - - - - Save the model, target model & replay memory for model : model_8x8x3_image.h5 - - - - -
+ - Episode: 6000, Win rate : 0.32, Median reward : 0.4, Epsilon : 0.5820653649225298
+ - Episode: 7000, Win rate : 0.37, Median reward : 0.8, Epsilon : 0.5513705430688994
+ - Episode: 8000, Win rate : 0.38, Median reward : 0.8, Epsilon : 0.5233007894381216
+ - Episode: 9000, Win rate : 0.38, Median reward : 0.8, Epsilon : 0.4947762901471652
+ - Episode: 10000, Win rate : 0.43, Median reward : 1.0, Epsilon : 0.4668019107993669
+ - - - - - Save the model, target model & replay memory for model : model_8x8x3_image.h5 - - - - -
+ - Episode: 11000, Win rate : 0.43, Median reward : 1.0, Epsilon : 0.43971608030669496
+ - Episode: 12000, Win rate : 0.47, Median reward : 1.0, Epsilon : 0.41513489994970115
+ - Episode: 13000, Win rate : 0.48, Median reward : 1.0, Epsilon : 0.39180050890239426
+ - Episode: 14000, Win rate : 0.48, Median reward : 1.0, Epsilon : 0.3690665784587506
+ - Episode: 15000, Win rate : 0.52, Median reward : 1.0, Epsilon : 0.3476865346146737
+ - - - - - Save the model, target model & replay memory for model : model_8x8x3_image.h5 - - - - -
+ - Episode: 1000, Win rate : 0.56, Median reward : 1.0, Epsilon : 0.3193762374053683
+ - Episode: 2000, Win rate : 0.57, Median reward : 1.0, Epsilon : 0.300078484767958
+ - Episode: 3000, Win rate : 0.58, Median reward : 1.0, Epsilon : 0.2821230392192294
+ - Episode: 4000, Win rate : 0.61, Median reward : 1.6, Epsilon : 0.2638135084948805
+ - Episode: 5000, Win rate : 0.63, Median reward : 1.0, Epsilon : 0.2477057770006409
+ - - - - - Save the model, target model & replay memory for model : model_8x8x3_image.h5 - - - - -
+ - Episode: 1000, Win rate : 0.72, Median reward : 1.9, Epsilon : 0.1201573868082113
+ - Episode: 2000, Win rate : 0.81, Median reward : 1.9, Epsilon : 0.0599622711756167

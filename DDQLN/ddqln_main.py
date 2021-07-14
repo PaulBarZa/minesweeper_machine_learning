@@ -23,11 +23,11 @@ MIN_DENSITY = 5
 MAX_DENSITY = 25
 
 # Size
-ROWS = 6
-COLS = 6
-MINES = 2
-MODE = "CONDENSED"
-MODEL_NAME = 'model_6x6xRandom_condensed.h5'
+ROWS = 8
+COLS = 8
+MINES = 3
+MODE = "IMAGE"
+MODEL_NAME = 'model_8x8x3_image.h5'
 
 
 def write_in_file(filename, message):

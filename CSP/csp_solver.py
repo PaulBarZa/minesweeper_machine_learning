@@ -257,27 +257,20 @@ class CSP_Solver():
     def split_group(self, group):
         # Split the goup if he is too big (too many unique variables)
         groups = [group]
-        uniq_vars_len = len(get_uniq_var(group))
         split_in = 1
         should_split = False
-        is_only_endgame = False
 
-        if uniq_vars_len > self.max_part_length:
+        if len(get_uniq_var(group)) > self.max_part_length:
             should_split = True
 
-        while should_split and not is_only_endgame:
+        while should_split:
             split_in += 1
             # Split in X groups
             splitted_group = list(np.array_split(np.array(group), split_in))
             groups = []
             should_split = False
-            is_only_endgame = False
 
             for s_group in splitted_group:
-                for c in s_group:
-                    if c.name != "end_game":
-                        is_only_endgame = True
-
                 if len(get_uniq_var(s_group)) > self.max_part_length:
                     should_split = True
                 groups.append(s_group)

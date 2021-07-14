@@ -12,8 +12,8 @@ from math import ceil
 # Prevents groups of cells greater than X when calculating probabilities
 BOARD_PART_LEN = 15
 
-EPISODE = 500
-STATS_EVERY = 1_000
+EPISODE = 250
+STATS_EVERY = 250
 
 RANDOM_SIZE = False
 MIN_SIZE = 5
@@ -23,9 +23,9 @@ RANDOM_DENSITY = False
 MIN_DENSITY = 5  # In percent
 MAX_DENSITY = 25
 
-ROWS = 16
-COLS = 16
-MINES = 13
+ROWS = 24
+COLS = 24
+MINES = 86
 
 if __name__ == "__main__":
 

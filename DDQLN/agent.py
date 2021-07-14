@@ -10,14 +10,14 @@ from ddqln_main import*
 
 
 # Exploration settings
-epsilon = 0.99
+epsilon = 0.24
 EPSILON_MIN = 0.01
 
 # Deep Q-learning model parameters
 learn_rate = 0.00004
 # LEARN_MIN = 0.0001
 DISCOUNT = 0
-DECAY = 0.999975
+DECAY = 0.99975
 
 # Memory & Target
 SWAP_TARGET = 10
