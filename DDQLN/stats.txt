@@ -287,3 +287,8 @@
  - - - - - Save the model, target model & replay memory for model : model_8x8x3_image.h5 - - - - -
  - Episode: 1000, Win rate : 0.72, Median reward : 1.9, Epsilon : 0.1201573868082113
  - Episode: 2000, Win rate : 0.81, Median reward : 1.9, Epsilon : 0.0599622711756167
+ - - - Starting parameters : - Training : False - Size : 6x6x2 (Random : False), Model : model_6x6x2_condensed.h5, Memory size : 50000 - - -
+ 
+ 
+ - - - Starting parameters : - Training : False - Size : 6x6x2 (Random : False), Model : model_6x6x2_condensed.h5, Memory size : 50000 - - -
+ - Episode: 150, Win rate : 0.77, Median reward : 1.0, Epsilon : 0.24

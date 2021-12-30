@@ -90,18 +90,21 @@ class DQNAgent(object):
     # ----- Model & Training -----
     #
     def load_replay_memory(self):
-        if os.path.isfile(f'DDQLN/replays/{MODEL_NAME}.pkl'):
-            return pickle.load(open(f'DDQLN/replays/{MODEL_NAME}.pkl', "rb"))
+        file_path = f'replays/{MODEL_NAME}.pkl'
+        if os.path.isfile(file_path):
+            return pickle.load(open(file_path, "rb"))
         return deque(maxlen=REPLAY_MAX_SIZE)
 
     def load_model(self):
-        if os.path.isfile(f'DDQLN/models/{MODEL_NAME}'):
-            return keras.models.load_model(f'DDQLN/models/{MODEL_NAME}')
+        file_path = f'models/{MODEL_NAME}'
+        if os.path.isfile(file_path):
+            return keras.models.load_model(file_path)
         return self.init_model()
 
     def load_target_model(self):
-        if os.path.isfile(f'DDQLN/targets/{MODEL_NAME}'):
-            return keras.models.load_model(f'DDQLN/targets/{MODEL_NAME}')
+        file_path = f'models/{MODEL_NAME}'
+        if os.path.isfile(file_path):
+            return keras.models.load_model(file_path)
         return self.model
 
     def init_model(self):
